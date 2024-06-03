@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "81cYs/jQzvCNBN3kUkvzXfolMdWy1YODv7ockT9XtJxphGeGhX1NJ08553pKvu6YZEZ19BZJ3JnE8pvcU6xESw==",
+  "dgSpecHash": "w1NHFiIJwv+ImG6IAbanVhcttnHIBYxPsC2cFbF1mC69wY5bLBs5zy6vdRRHmM3YzUwbeUM5ZjxREfZA/2Qi+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Константан\\source\\repos\\Политех\\работа\\gg\\gg.csproj",
+  "projectFilePath": "C:\\Users\\Константан\\sharaga\\gg\\gg.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Константан\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Константан\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

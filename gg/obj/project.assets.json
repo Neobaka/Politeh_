@@ -933,11 +933,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Константан\\source\\repos\\Политех\\работа\\gg\\gg.csproj",
+      "projectUniqueName": "C:\\Users\\Константан\\sharaga\\gg\\gg.csproj",
       "projectName": "gg",
-      "projectPath": "C:\\Users\\Константан\\source\\repos\\Политех\\работа\\gg\\gg.csproj",
+      "projectPath": "C:\\Users\\Константан\\sharaga\\gg\\gg.csproj",
       "packagesPath": "C:\\Users\\Константан\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Константан\\source\\repos\\Политех\\работа\\gg\\obj\\",
+      "outputPath": "C:\\Users\\Константан\\sharaga\\gg\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Константан\\AppData\\Roaming\\NuGet\\NuGet.Config",
