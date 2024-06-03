@@ -1,0 +1,302 @@
+C:\Users\ADMIN\source\repos\gg\gg\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ADMIN\source\repos\gg\gg\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ADMIN\source\repos\gg\gg\bin\Debug\netcoreapp3.1\gg.exe
+C:\Users\ADMIN\source\repos\gg\gg\bin\Debug\netcoreapp3.1\gg.deps.json
+C:\Users\ADMIN\source\repos\gg\gg\bin\Debug\netcoreapp3.1\gg.runtimeconfig.json
+C:\Users\ADMIN\source\repos\gg\gg\bin\Debug\netcoreapp3.1\gg.runtimeconfig.dev.json
+C:\Users\ADMIN\source\repos\gg\gg\bin\Debug\netcoreapp3.1\gg.dll
+C:\Users\ADMIN\source\repos\gg\gg\bin\Debug\netcoreapp3.1\gg.pdb
+C:\Users\ADMIN\source\repos\gg\gg\bin\Debug\netcoreapp3.1\gg.Views.dll
+C:\Users\ADMIN\source\repos\gg\gg\bin\Debug\netcoreapp3.1\gg.Views.pdb
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\gg.csprojAssemblyReference.cache
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\gg.AssemblyInfoInputs.cache
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\gg.AssemblyInfo.cs
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\gg.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\gg.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorAssemblyInfo.cache
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorAssemblyInfo.cs
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\staticwebassets\gg.StaticWebAssets.Manifest.cache
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\staticwebassets\gg.StaticWebAssets.xml
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\scopedcss\bundle\gg.styles.css
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\gg.TagHelpers.input.cache
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\gg.TagHelpers.output.cache
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorCoreGenerate.cache
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorTargetAssemblyInfo.cache
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorTargetAssemblyInfo.cs
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\gg.Views.pdb
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\gg.dll
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\gg.pdb
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\gg.genruntimeconfig.cache
+C:\Users\ADMIN\source\repos\gg\gg\obj\Debug\netcoreapp3.1\gg.csproj.CopyComplete
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\appsettings.Development.json
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\appsettings.json
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\gg.exe
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\gg.deps.json
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\gg.runtimeconfig.json
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\gg.runtimeconfig.dev.json
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\gg.dll
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\gg.pdb
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\gg.Views.dll
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\gg.Views.pdb
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.csprojAssemblyReference.cache
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.AssemblyInfoInputs.cache
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.AssemblyInfo.cs
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.csproj.CoreCompileInputs.cache
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.MvcApplicationPartsAssemblyInfo.cache
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorAssemblyInfo.cache
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorAssemblyInfo.cs
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\staticwebassets\gg.StaticWebAssets.Manifest.cache
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\staticwebassets\gg.StaticWebAssets.xml
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\scopedcss\bundle\gg.styles.css
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.TagHelpers.input.cache
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.TagHelpers.output.cache
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorCoreGenerate.cache
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorTargetAssemblyInfo.cache
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorTargetAssemblyInfo.cs
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.Views.pdb
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.dll
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.pdb
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.genruntimeconfig.cache
+\\192.168.0.71\it\IT_guest\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.csproj.CopyComplete
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\appsettings.Development.json
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\appsettings.json
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\gg.exe
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\gg.deps.json
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\gg.runtimeconfig.json
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\gg.runtimeconfig.dev.json
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\gg.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\gg.pdb
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\gg.Views.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\gg.Views.pdb
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.AssemblyInfoInputs.cache
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.AssemblyInfo.cs
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorAssemblyInfo.cache
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorAssemblyInfo.cs
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\staticwebassets\gg.StaticWebAssets.Manifest.cache
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\staticwebassets\gg.StaticWebAssets.xml
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.TagHelpers.input.cache
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.TagHelpers.output.cache
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorCoreGenerate.cache
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorTargetAssemblyInfo.cache
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorTargetAssemblyInfo.cs
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.Views.pdb
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.pdb
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.csproj.CopyComplete
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\Npgsql.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\Humanizer.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.MvcApplicationPartsAssemblyInfo.cache
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\obj\Debug\netcoreapp3.1\gg.csprojAssemblyReference.cache
+\\192.168.0.71\it\IT_guest\2020\IT-2-2\Форма Обратной Связи\gg\gg\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\gg.exe
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\gg.deps.json
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\gg.runtimeconfig.json
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\gg.runtimeconfig.dev.json
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\gg.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\gg.pdb
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\gg.Views.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\gg.Views.pdb
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\gg.csprojAssemblyReference.cache
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\gg.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\gg.AssemblyInfo.cs
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\gg.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\gg.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorAssemblyInfo.cache
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorAssemblyInfo.cs
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\staticwebassets\gg.StaticWebAssets.Manifest.cache
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\staticwebassets\gg.StaticWebAssets.xml
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\scopedcss\bundle\gg.styles.css
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\gg.TagHelpers.input.cache
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\gg.TagHelpers.output.cache
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorCoreGenerate.cache
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorTargetAssemblyInfo.cache
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\gg.RazorTargetAssemblyInfo.cs
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\gg.Views.pdb
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\gg.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\gg.dll
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\gg.pdb
+C:\Users\ADMIN\Desktop\Новая папка (2)\gg\gg\obj\Debug\netcoreapp3.1\gg.genruntimeconfig.cache
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\gg.StaticWebAssets.xml
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\gg.exe
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\gg.deps.json
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\gg.runtimeconfig.json
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\gg.runtimeconfig.dev.json
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\gg.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\gg.pdb
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\gg.Views.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\gg.Views.pdb
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\12345\Desktop\к\для говна\gg\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.csproj.AssemblyReference.cache
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.AssemblyInfoInputs.cache
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.AssemblyInfo.cs
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.csproj.CoreCompileInputs.cache
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.RazorAssemblyInfo.cache
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.RazorAssemblyInfo.cs
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\scopedcss\bundle\gg.styles.css
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\staticwebassets\gg.StaticWebAssets.Manifest.cache
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.TagHelpers.input.cache
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.TagHelpers.output.cache
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.RazorCoreGenerate.cache
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.RazorTargetAssemblyInfo.cache
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.RazorTargetAssemblyInfo.cs
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.Views.pdb
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.csproj.CopyComplete
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.dll
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.pdb
+C:\Users\12345\Desktop\к\для говна\gg\obj\Debug\netcoreapp3.1\gg.genruntimeconfig.cache
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\gg.StaticWebAssets.xml
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\gg.exe
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\gg.deps.json
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\gg.runtimeconfig.json
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\gg.runtimeconfig.dev.json
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\gg.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\gg.pdb
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\gg.Views.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\gg.Views.pdb
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\Константин\source\repos\работа\gg\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.csproj.AssemblyReference.cache
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.AssemblyInfoInputs.cache
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.AssemblyInfo.cs
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.csproj.CoreCompileInputs.cache
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.RazorAssemblyInfo.cache
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.RazorAssemblyInfo.cs
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.TagHelpers.input.cache
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.TagHelpers.output.cache
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.RazorCoreGenerate.cache
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.RazorTargetAssemblyInfo.cache
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.RazorTargetAssemblyInfo.cs
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.Views.pdb
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\staticwebassets\gg.StaticWebAssets.Manifest.cache
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\staticwebassets\gg.StaticWebAssets.Pack.cache
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.gg.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.gg.props
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.gg.props
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.gg.props
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.csproj.Up2Date
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.dll
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.pdb
+C:\Users\Константин\source\repos\работа\gg\obj\Debug\netcoreapp3.1\gg.genruntimeconfig.cache
