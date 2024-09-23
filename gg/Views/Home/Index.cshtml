@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Главная";
 }
 
 
@@ -15,16 +15,16 @@
                             <img class="image" src="C:\Users\qwe\Pictures\Screenshot 2024-03-31 192029" alt="" data-header-fix-moment-exclude="d-block" data-header-fix-moment-classes="d-none" srcset="" data-fileid="1846" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;#&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn-ru.bitrix24.ru/b27091018/landing/02a/02a1b7c34b570b711a4843255cd96c87/oenjz4f0lly_1x_png" loading="lazy" />
                         </a>
                             <ul>
-                                <li><a href="">Главная</a></li>
+                            <li><a asp-controller="Home" asp-action="Index">Главная</a></li>
                                 <li><a href="">Рейтинг по отзывам</a></li>
-                                <li><a href="">Рейтинг по REAX</a></li>
+                            <li><a asp-controller="Home" asp-action="newpage">Рейтинг по REAX</a></li>
                                 <li><a href="">Профориентация</a></li>
                                 <li><a href="">Вебинары</a></li>
                                 <li><a href="">Калькулятор ЕГЭ</a></li>
                                 <li><a href="">Сравнение ВУЗов</a></li>
                                 <li><a href="">Гайды</a></li>
                                 <li><a href="">Дни открытых дверей</a></li>
-                                <li><a href="">Личный кабинет</a></li>
+                            <li><a asp-controller="Home" asp-action="Kabinet">Личный кабинет</a></li>
                             </ul>
                     </nav>
                 </div>
@@ -200,7 +200,7 @@
                         <h2>
                             ИНФОРМАЦИЯ
                         </h2>
-                        <ul>
+                        <ul class="info-ul">
                             <li>
                                 <a href="#">О САЙТЕ</a>
                             </li>
@@ -216,9 +216,9 @@
                         </ul>
 
                     </div>
-                    <div clas="active">
+                    <div clas="activity">
                         <h2>АКТИВНОСТИ</h2>
-                        <ul>
+                        <ul class="activity-ul">
                             <li><a href="#">РЕЙТИНГ ПО ОТЗЫВАМ</a></li>
                             <li><a href="#">РЕЙТИНГ RAEX</a></li>
                             <li><a href="#">КАЛЬКУЛЯТОР ЕГЭ</a></li>
@@ -230,7 +230,7 @@
                     </div>
                     <div class="more">
                         <h2>ДОПОЛНИТЕЛЬНО</h2>
-                        <ul>
+                        <ul class="more-ul">
                             <li><a href="#">ДОБАВИТЬ ВУЗ</a></li>
                             <li><a href="#">НАШИ ПАРТНЁРЫ</a></li>
                             <li><a href="#">ОБРАТНАЯ СВЯЗЬ</a></li>
