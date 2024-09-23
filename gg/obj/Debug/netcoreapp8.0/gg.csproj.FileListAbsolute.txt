@@ -72,3 +72,4 @@ C:\Users\Константан\source\repos\Политех\работа\gg\obj\De
 C:\Users\Константан\source\repos\Политех\работа\gg\obj\Debug\netcoreapp8.0\gg.pdb
 C:\Users\Константан\source\repos\Политех\работа\gg\obj\Debug\netcoreapp8.0\gg.genruntimeconfig.cache
 C:\Users\Константан\source\repos\Политех\работа\gg\obj\Debug\netcoreapp8.0\ref\gg.dll
+C:\Users\Константан\source\repos\Политех\работа\gg\obj\Debug\netcoreapp8.0\gg.sourcelink.json

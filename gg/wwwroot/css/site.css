@@ -43,9 +43,9 @@ nav ul {
     position: absolute; /* Позиционируем картинку абсолютно внутри родительского блока */
     top: 50%; /* Положение картинки относительно верхнего края блока навигации */
     transform: translateY(-50%);
-    left: 20px; 
-  
+    left: 20px;
 }
+
 .university-card {
     display: flex;
     background-color: white;
@@ -54,6 +54,7 @@ nav ul {
     margin-top: 20px;
     border-radius: 20px;
 }
+
 .university-image {
     position: relative;
     flex: 1;
@@ -203,17 +204,19 @@ nav ul {
 }
 
 .bott_blocks {
-    width: 50%;
+    width: 65%;
     float: left;
+    margin-bottom: 1%;
+    padding-left: 1%;
 }
 
 div#myBtnContainer {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     flex-grow: 1;
     float: right;
-    padding: 5%;
+    padding: 3%;
+    gap: 0.2%;
 }
 
 .btn {
@@ -230,17 +233,20 @@ div#myBtnContainer {
 }
 
 .footer {
-    
 }
 
 .row {
     background-color: grey;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5%;
 }
 
 .contacts {
     display: inline-block;
-    margin-left: 20%;
+    margin-left: 10%;
     vertical-align: top;
 }
 
@@ -250,17 +256,48 @@ div#myBtnContainer {
     margin-left: 20%;
 }
 
+.info-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
 
-.active {
-    display: inline-block;
-    vertical-align: top;
+.activity {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+.activity-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
 }
 
 
 .more {
-    display: inline-block;
-    vertical-align: top;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
 }
+
+.more-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+
 
 .block_Politex {
     background-color: white;
@@ -273,11 +310,13 @@ div#myBtnContainer {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 }
+
 .block_Druzhba {
     background-color: white;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 }
+
 .block_GosPiter {
     background-color: white;
     border-top-right-radius: 50px;
@@ -382,4 +421,166 @@ div#myBtnContainer {
     font-size: 1.2em;
     margin-bottom: 10px;
     color: white;
+}
+
+
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline;
+        margin-right: 15px;
+    }
+
+.choose_RAEX {
+    text-decoration: none;
+    color: #e60000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    table thead {
+        background-color: #333;
+        color: white;
+    }
+
+    table th, table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    table tbody tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+
+    table img {
+        width: 40px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+    justify-content: space-evenly;
+}
+
+.registration {
+    width: 45%;
+    background-color: #ffccdd;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+    .registration h2 {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .registration p {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+        .registration p a {
+            color: #000;
+            text-decoration: none;
+        }
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+    .social-btn img {
+        width: 24px;
+        margin-right: 10px;
+    }
+
+.vk img {
+    background-color: #0077ff;
+}
+
+.yandex img {
+    background-color: #ff3300;
+}
+
+.email img {
+    background-color: #000;
+}
+
+.terms {
+    font-size: 12px;
+    color: #fff;
+}
+
+    .terms a {
+        color: #000;
+        text-decoration: underline;
+    }
+
+.info {
+    width: 45%;
+    padding: 40px;
+    background-color: #001f3f;
+    color: #fff;
+    border-radius: 10px;
+}
+
+    .info p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .info h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+.illustration {
+    width: 100%;
+    margin-bottom: 20px;
 }

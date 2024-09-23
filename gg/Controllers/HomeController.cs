@@ -39,7 +39,11 @@ namespace gg.Controllers
         }
         
 
-        public IActionResult Privacy()
+        public IActionResult newpage()
+        {
+            return View();
+        }
+        public IActionResult Kabinet()
         {
             return View();
         }
