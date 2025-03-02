@@ -39,11 +39,15 @@ namespace gg.Controllers
         }
         
 
-        public IActionResult newpage()
+        public IActionResult RAEX()
         {
             return View();
         }
         public IActionResult Kabinet()
+        {
+            return View();
+        }
+        public IActionResult Guide()
         {
             return View();
         }

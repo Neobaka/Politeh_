@@ -928,19 +928,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Константан\\.nuget\\packages\\": {}
+    "C:\\Users\\Константин\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Константан\\source\\repos\\Политех\\работа\\gg\\gg.csproj",
+      "projectUniqueName": "C:\\Users\\Константин\\Source\\Repos\\Politeh_\\gg\\gg.csproj",
       "projectName": "gg",
-      "projectPath": "C:\\Users\\Константан\\source\\repos\\Политех\\работа\\gg\\gg.csproj",
-      "packagesPath": "C:\\Users\\Константан\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Константан\\source\\repos\\Политех\\работа\\gg\\obj\\",
+      "projectPath": "C:\\Users\\Константин\\Source\\Repos\\Politeh_\\gg\\gg.csproj",
+      "packagesPath": "C:\\Users\\Константин\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Константин\\Source\\Repos\\Politeh_\\gg\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Константан\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Константин\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -964,8 +969,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      }
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -1001,8 +1007,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "У пакета \"Npgsql\" 5.0.10 есть известная уязвимость https://github.com/advisories/GHSA-x9vc-6hfv-hg8c (уровень серьезности: высокий)",
+      "libraryId": "Npgsql",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

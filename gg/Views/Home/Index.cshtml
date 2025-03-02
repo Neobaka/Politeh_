@@ -17,12 +17,12 @@
                             <ul>
                             <li><a asp-controller="Home" asp-action="Index">Главная</a></li>
                                 <li><a href="">Рейтинг по отзывам</a></li>
-                            <li><a asp-controller="Home" asp-action="newpage">Рейтинг по REAX</a></li>
+                            <li><a asp-controller="Home" asp-action="RAEX">Рейтинг по REAX</a></li>
                                 <li><a href="">Профориентация</a></li>
                                 <li><a href="">Вебинары</a></li>
                                 <li><a href="">Калькулятор ЕГЭ</a></li>
                                 <li><a href="">Сравнение ВУЗов</a></li>
-                                <li><a href="">Гайды</a></li>
+                            <li><a asp-controller="Home" asp-action="Guide">Гайды</a></li>
                                 <li><a href="">Дни открытых дверей</a></li>
                             <li><a asp-controller="Home" asp-action="Kabinet">Личный кабинет</a></li>
                             </ul>
@@ -78,7 +78,7 @@
                 <div class="filterDiv obshaga trud hard voen useful dop">
                     <div class="university-card">
                         <div class="university-image">
-                            <img src="https://via.placeholder.com/150" alt="Политех">
+                            <img src="https://avatars.mds.yandex.net/get-altay/11368589/2a0000018bc765d3bab1020f3b660eb59b2e/XXL_height" alt="Политех">
                             <div class="tuition-fee">от 44 000 ₽/семестр</div>
                         </div>
                         <div class="university-info">
@@ -99,7 +99,7 @@
                 <div class="filterDiv trud hard useful staz fun dost">
                     <div class="university-card">
                         <div class="university-image">
-                            <img src="https://via.placeholder.com/150" alt="Итмо">
+                            <img src="https://smapse.ru/storage/2020/10/itmo-spb-smapse2.jpg" alt="Итмо">
                             <div class="tuition-fee">от 44 000 ₽/семестр</div>
                         </div>
                         <div class="university-info">
@@ -117,7 +117,7 @@
                 <div class="filterDiv obshaga useful staz prepod fun dop dost vremya">
                     <div class="university-card">
                         <div class="university-image">
-                            <img src="https://via.placeholder.com/150" alt="Итмо">
+                            <img src="https://obruchev.mos.ru/%D1%80%D1%83%D0%B4%D0%BD89%D0%B7%D1%88%D1%89%D0%B6%D0%BB%D0%B4.jpg" alt="Итмо">
                             <div class="tuition-fee">от 44 000 ₽/семестр</div>
                         </div>
                         <div class="university-info">
@@ -137,12 +137,12 @@
                 <div class="filterDiv obshaga trud hard voen useful staz prepod fun dop">
                     <div class="university-card">
                         <div class="university-image">
-                            <img src="https://via.placeholder.com/150" alt="Итмо">
+                            <img src="https://dpru.obs.ru-moscow-1.hc.sbercloud.ru/images/article/2020/08/21/96AEB8FB-D105-4D93-97CA-15D7BE05E0B8.jpg" alt="Итмо">
                             <div class="tuition-fee">от 44 000 ₽/семестр</div>
                         </div>
                         <div class="university-info">
                             <div class="location">Санкт-Петербург</div>
-                            <div class="university-name">Санкт-Петербургски государственный уневиреситет</div>
+                            <div class="university-name">Санкт-Петербургский государственный уневиреситет</div>
                             <div class="university-rating">№3 в рейтинге по RAEX</div>
                             <button class="reviews-button">Отзывы</button>
                             <div class="scores">
@@ -242,15 +242,33 @@
                 </div>
             
         </section>
-        <div class="feedback-widget">
-            <button class="toggle-btn">Напишите нам</button>
-            <div class="feedback-form">
-                <h2>Обратная связь</h2>
-                <form>
-                    <input type="text" placeholder="ФИО" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Комментарий" required></textarea>
-                    <button type="submit">Отправить</button>
+        <!-- Кнопка обратной связи -->
+        <button class="feedback-button" id="feedbackBtn">
+            <svg class="feedback-icon" viewBox="0 0 24 24">
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" />
+            </svg>
+        </button>
+
+        <div class="modal" id="feedbackModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Обратная связь</h2>
+                    <button class="close-button" id="closeModal">&times;</button>
+                </div>
+                <form class="feedback-form" id="feedbackForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Отправить</button>
                 </form>
             </div>
         </div>
