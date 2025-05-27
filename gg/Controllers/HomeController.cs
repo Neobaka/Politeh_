@@ -25,18 +25,7 @@ namespace gg.Controllers
         {
             return View();
         }
-        [HttpPost]
 
-        public string Index(string First_name, string Last_name, string Middle_name, string school_middle, string school_new, string quantum, bool klass, bool Fruit)
-        {
-            return $"First_name: {First_name}\n" +
-                $"Last_name: {Last_name}\n" +
-                $"Middle_name: {Middle_name}\n" +
-                $"school_new: {school_new}\n" +
-                $"quantum: {quantum}\n" +
-                $"10_class: {klass}\n" +
-                $"da_net: {Fruit}\n";
-        }
         
 
         public IActionResult RAEX()
@@ -48,6 +37,31 @@ namespace gg.Controllers
             return View();
         }
         public IActionResult Guide()
+        {
+            return View();
+        }
+
+        public IActionResult Page_vuz()
+        {
+            return View();
+        }
+
+        public IActionResult SPB_vuz()
+        {
+            return View();
+        }
+
+        public IActionResult ITMO_vuz()
+        {
+            return View();
+        }
+
+        public IActionResult Prof()
+        {
+            return View();
+        }
+
+        public IActionResult Result()
         {
             return View();
         }

@@ -15,16 +15,16 @@
                             <img class="image" src="C:\Users\qwe\Pictures\Screenshot 2024-03-31 192029" alt="" data-header-fix-moment-exclude="d-block" data-header-fix-moment-classes="d-none" srcset="" data-fileid="1846" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;#&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn-ru.bitrix24.ru/b27091018/landing/02a/02a1b7c34b570b711a4843255cd96c87/oenjz4f0lly_1x_png" loading="lazy" />
                         </a>
                             <ul>
-                            <li><a asp-controller="Home" asp-action="Index">Главная</a></li>
-                                <li><a href="">Рейтинг по отзывам</a></li>
-                            <li><a asp-controller="Home" asp-action="RAEX">Рейтинг по REAX</a></li>
-                                <li><a href="">Профориентация</a></li>
-                                <li><a href="">Вебинары</a></li>
-                                <li><a href="">Калькулятор ЕГЭ</a></li>
-                                <li><a href="">Сравнение ВУЗов</a></li>
-                            <li><a asp-controller="Home" asp-action="Guide">Гайды</a></li>
-                                <li><a href="">Дни открытых дверей</a></li>
-                            <li><a asp-controller="Home" asp-action="Kabinet">Личный кабинет</a></li>
+                            <li><a asp-controller="Home" asp-action="Index" class="nav-button-main">Главная</a></li>
+                            <li><a href="" class="nav-button-main">Рейтинг по отзывам</a></li>
+                            <li><a asp-controller="Home" asp-action="RAEX" class="nav-button-main">Рейтинг по REAX</a></li>
+                            <li><a asp-controller="Home" asp-action="Prof" class="nav-button-main">Профориентация</a></li>
+                            <li><a href="" class="nav-button-main">Вебинары</a></li>
+                            <li><a href="" class="nav-button-main">Калькулятор ЕГЭ</a></li>
+                            <li><a href="" class="nav-button-main">Сравнение ВУЗов</a></li>
+                            <li><a asp-controller="Home" asp-action="Guide" class="nav-button-main">Гайды</a></li>
+                            <li><a href="" class="nav-button-main">Дни открытых дверей</a></li>
+                            <li><a asp-controller="Home" asp-action="Kabinet" class="nav-button-main">Личный кабинет</a></li>
                             </ul>
                     </nav>
                 </div>
@@ -76,43 +76,45 @@
         <div class="lower_content">
             <div class="bott_blocks">
                 <div class="filterDiv obshaga trud hard voen useful dop">
-                    <div class="university-card">
-                        <div class="university-image">
-                            <img src="https://avatars.mds.yandex.net/get-altay/11368589/2a0000018bc765d3bab1020f3b660eb59b2e/XXL_height" alt="Политех">
-                            <div class="tuition-fee">от 44 000 ₽/семестр</div>
-                        </div>
-                        <div class="university-info">
-                            <div class="location">Санкт-Петербург</div>
-                            <div class="university-name">Санкт-Петербургский политехнический университет Петра Великого</div>
-                            <div class="university-rating">№8 в рейтинге RAEX</div>
-                            <button class="reviews-button">Отзывы</button>
-                            <div class="scores">
-                                <div class="score">от <span>54</span> бал. бюджет</div>
-                                <div class="score">от <span>51</span> бал. платно</div>
+                    <a asp-controller="Home" asp-action="SPB_vuz">
+                        <div class="university-card">
+                            <div class="university-image">
+                                <img src="https://avatars.mds.yandex.net/get-altay/11368589/2a0000018bc765d3bab1020f3b660eb59b2e/XXL_height" alt="Политех">
+                                <div class="tuition-fee">от 44 000 ₽/семестр</div>
+                            </div>
+                            <div class="university-info">
+                                <div class="location">Санкт-Петербург</div>
+                                <div class="university-name">Санкт-Петербургский политехнический университет Петра Великого</div>
+                                <div class="university-rating">№8 в рейтинге RAEX</div>
+                                <button class="reviews-button">Отзывы</button>
+                                <div class="scores">
+                                    <div class="score">от <span>54</span> бал. бюджет</div>
+                                    <div class="score">от <span>51</span> бал. платно</div>
+                                </div>
                             </div>
                         </div>
-
-                        
-                    </div>
+                    </a>
                 </div>
 
                 <div class="filterDiv trud hard useful staz fun dost">
-                    <div class="university-card">
-                        <div class="university-image">
-                            <img src="https://smapse.ru/storage/2020/10/itmo-spb-smapse2.jpg" alt="Итмо">
-                            <div class="tuition-fee">от 44 000 ₽/семестр</div>
-                        </div>
-                        <div class="university-info">
-                            <div class="location">Санкт-Петербург</div>
-                            <div class="university-name">Университет ИТМО</div>
-                            <div class="university-rating">№14 в рейтинге по RAEX</div>
-                            <button class="reviews-button">Отзывы</button>
-                            <div class="scores">
-                                <div class="score">от <span>74</span> бал. бюджет</div>
-                                <div class="score">от <span>65</span> бал. платно</div>
+                    <a asp-controller="Home" asp-action="ITMO_vuz">
+                        <div class="university-card">
+                            <div class="university-image">
+                                <img src="https://smapse.ru/storage/2020/10/itmo-spb-smapse2.jpg" alt="Итмо">
+                                <div class="tuition-fee">от 44 000 ₽/семестр</div>
+                            </div>
+                            <div class="university-info">
+                                <div class="location">Санкт-Петербург</div>
+                                <div class="university-name">Университет ИТМО</div>
+                                <div class="university-rating">№14 в рейтинге по RAEX</div>
+                                <button class="reviews-button">Отзывы</button>
+                                <div class="scores">
+                                    <div class="score">от <span>74</span> бал. бюджет</div>
+                                    <div class="score">от <span>65</span> бал. платно</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="filterDiv obshaga useful staz prepod fun dop dost vremya">
                     <div class="university-card">

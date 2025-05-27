@@ -1,0 +1,321 @@
+﻿@{
+    ViewData["Title"] = "Профориентация";
+}
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на выбор профессии</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .container_prof {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 60px;
+            position: relative;
+        }
+
+        .a_link{
+            position: absolute;
+            right: 25%;
+            width: 14%;
+        }
+
+        .career-test {
+            background: linear-gradient(135deg, #512da8 0%, #03000c 100%);
+            color: white;
+            padding: 40px 0;
+            position: relative;
+            overflow: hidden;
+            min-height: 300px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            margin-bottom: 20px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+            .breadcrumb a {
+                color: white;
+                text-decoration: none;
+                margin-right: 10px;
+            }
+
+            .breadcrumb span:after {
+                content: ">";
+                margin: 0 10px;
+            }
+
+        .career-content {
+            width: 60%;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .author {
+            font-size: 14px;
+            opacity: 0.7;
+            margin-top: 30px;
+        }
+
+        .illustrations {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 40%;
+            z-index: 1;
+        }
+
+        .illustration-item {
+            position: absolute;
+            animation: float 3s infinite ease-in-out;
+        }
+
+        .rocket {
+            right: 15%;
+            top: 30%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .code {
+            right: 5%;
+            bottom: 20%;
+            width: 60px;
+            height: 60px;
+        }
+
+        .book {
+            left: 10%;
+            top: 15%;
+            width: 50px;
+            height: 50px;
+        }
+
+        .star {
+            right: 35%;
+            top: 15%;
+            width: 15px;
+            height: 15px;
+            background-color: white;
+            border-radius: 50%;
+            opacity: 0.7;
+        }
+
+        .fist {
+            right: 30%;
+            top: 50%;
+            width: 70px;
+            height: 70px;
+        }
+
+        .test-person {
+            right: 10%;
+            bottom: 10%;
+            width: 80px;
+            height: 120px;
+        }
+
+        .purchase-btn {
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(255, 87, 34, 0.4);
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+            .purchase-btn:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5);
+            }
+
+        .social-share {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            z-index: 10;
+        }
+
+        .share-icon {
+            width: 30px;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @@keyframes float {
+            0%
+
+        {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+
+        }
+
+        @@media (max-width: 768px) {
+            .career-content
+
+        {
+            width: 100%;
+        }
+
+        .illustrations {
+            opacity: 0.2;
+            width: 100%;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <a href="#b314416" class="">
+            <img class="image" src="C:\Users\qwe\Pictures\Screenshot 2024-03-31 192029" alt="" data-header-fix-moment-exclude="d-block" data-header-fix-moment-classes="d-none" srcset="" data-fileid="1846" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;#&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn-ru.bitrix24.ru/b27091018/landing/02a/02a1b7c34b570b711a4843255cd96c87/oenjz4f0lly_1x_png" loading="lazy" />
+        </a>
+        <ul>
+            <li><a asp-controller="Home" asp-action="Index" class="nav-button-main">Главная</a></li>
+            <li><a href="" class="nav-button-main">Рейтинг по отзывам</a></li>
+            <li><a asp-controller="Home" asp-action="RAEX" class="nav-button-main">Рейтинг по REAX</a></li>
+            <li><a asp-controller="Home" asp-action="Prof" class="nav-button-main">Профориентация</a></li>
+            <li><a href="" class="nav-button-main">Вебинары</a></li>
+            <li><a href="" class="nav-button-main">Калькулятор ЕГЭ</a></li>
+            <li><a href="" class="nav-button-main">Сравнение ВУЗов</a></li>
+            <li><a asp-controller="Home" asp-action="Guide" class="nav-button-main">Гайды</a></li>
+            <li><a href="" class="nav-button-main">Дни открытых дверей</a></li>
+            <li><a asp-controller="Home" asp-action="Kabinet" class="nav-button-main">Личный кабинет</a></li>
+        </ul>
+    </nav>
+    
+    <div class="career-test">
+        <div class="container_prof">
+            <div class="breadcrumb">
+                <span><a href="#">Тесты на профессию</a></span>
+                <span>Тест выбора профессий</span>
+            </div>
+
+            <div class="career-content">
+                <h1>Тест на выбор профессии</h1>
+                <div class="description">
+                    <p style="color:white;">Многие абитуриенты испытывают трудности в выборе профессии. Чтобы узнать, какая профессия подходит именно вам, мы предлагаем пройти тест на выбор профессии, который поможет вам уточнить свой выбор, узнать будущую профессию, увидеть новые варианты. В результатах теста представлены не только подходящие профессии, но и программы обучения, которые позволят её получить.</p>
+                </div>
+                <div class="author">
+                    
+                </div>
+            </div>
+
+            <div class="illustrations">
+                <div class="illustration-item rocket">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 10C40 30 40 50 50 70L60 60L70 70C80 50 80 30 70 10C60 15 60 15 50 10Z" fill="#FF5722" />
+                        <path d="M40 80L50 70L60 80L50 90L40 80Z" fill="#FF9800" />
+                        <circle cx="60" cy="40" r="5" fill="white" />
+                    </svg>
+                </div>
+                <div class="illustration-item code">
+                    <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="60" height="60" rx="5" fill="#2196F3" />
+                        <path d="M20 30L10 20L20 10" stroke="white" stroke-width="3" />
+                        <path d="M40 30L50 20L40 10" stroke="white" stroke-width="3" />
+                        <path d="M30 10L25 50" stroke="white" stroke-width="3" />
+                    </svg>
+                </div>
+                <div class="illustration-item fist">
+                    <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="35" cy="35" r="35" fill="#FFEB3B" />
+                        <path d="M30 20V40C30 45 35 50 40 50C45 50 50 45 50 40V20" stroke="#FFC107" stroke-width="8" stroke-linecap="round" />
+                        <path d="M20 25V40C20 45 25 50 30 50" stroke="#FFC107" stroke-width="8" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="illustration-item book">
+                    <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 10V40H40V10H10Z" fill="#4CAF50" />
+                        <path d="M25 10V40" stroke="white" stroke-width="2" />
+                        <path d="M15 20H20" stroke="white" stroke-width="2" />
+                        <path d="M15 25H20" stroke="white" stroke-width="2" />
+                        <path d="M30 20H35" stroke="white" stroke-width="2" />
+                        <path d="M30 25H35" stroke="white" stroke-width="2" />
+                    </svg>
+                </div>
+                <div class="illustration-item test-person">
+                    <svg viewBox="0 0 80 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="40" cy="30" r="20" fill="#FFEB3B" />
+                        <path d="M20 60C20 50 60 50 60 60L55 100H45L50 80L30 85L25 100H15L20 60Z" fill="#FFEB3B" />
+                        <circle cx="33" cy="25" r="3" fill="#795548" />
+                        <circle cx="47" cy="25" r="3" fill="#795548" />
+                        <path d="M33 40C40 45 45 40 47 40" stroke="#795548" stroke-width="2" />
+                    </svg>
+                </div>
+                <div class="illustration-item star"></div>
+                <div class="illustration-item star" style="right: 20%; top: 40%; width: 10px; height: 10px;"></div>
+                <div class="illustration-item star" style="right: 50%; top: 25%; width: 8px; height: 8px;"></div>
+                <div class="illustration-item star" style="right: 15%; bottom: 30%; width: 12px; height: 12px;"></div>
+            </div>
+
+            <a asp-controller="Home" asp-action="Result" class="a_link"><button class="purchase-btn">Купить за 199₽</button></a>
+            
+
+            <div class="social-share">
+                <div class="share-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 5.12 15.0069 5.24 15.0196 5.358L8.52809 9.12439C7.97405 8.42316 7.03615 8 6 8C4.34315 8 3 9.34315 3 11C3 12.6569 4.34315 14 6 14C7.03615 14 7.97405 13.5768 8.52809 12.8756L15.0196 16.642C15.0069 16.76 15 16.88 15 17C15 18.6569 16.3431 20 18 20C19.6569 20 21 18.6569 21 17C21 15.3431 19.6569 14 18 14C16.9638 14 16.0259 14.4232 15.4719 15.1244L8.98039 11.358C8.99306 11.24 9 11.12 9 11C9 10.88 8.99306 10.76 8.98039 10.642L15.4719 6.87561C16.0259 7.57684 16.9638 8 18 8Z" fill="white" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const button = document.querySelector('.purchase-btn');
+            button.addEventListener('click', function () {
+                window.location.href = 'result.html';
+            });
+        });
+    </script>
+
+</body>
+</html>

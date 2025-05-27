@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Результат теста</title>
+    <style>
+        body {
+            background-color: #6c5ce7;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 40px 0px 0px 0px;
+            width: 95%;
+            background: linear-gradient(135deg, #512da8 0%, #03000c 100%);
+        }
+
+        .result-page {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .result-title {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: black;
+        }
+
+        .profession-image {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 30px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+            .profession-image img {
+                max-width: 90%;
+                max-height: 90%;
+            }
+
+        .result-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .result-btn {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            .result-btn:hover {
+                background-color: #27ae60;
+            }
+
+            .result-btn.secondary {
+                background-color: #3498db;
+            }
+
+                .result-btn.secondary:hover {
+                    background-color: #2980b9;
+                }
+
+        /* Адаптивный дизайн */
+        @@media (max-width: 768px) {
+            .container_prof
+
+        {
+            padding: 15px;
+        }
+
+        h1 {
+            font-size: 26px;
+        }
+
+        .description p {
+            font-size: 16px;
+        }
+
+        .result-buttons {
+            max-width: 100%;
+        }
+
+        }
+    </style>
+</head>
+
+<body style="width: 95%;">
+
+    <nav class="navigation">
+        <a href="#b314416" class="">
+            <img class="image" src="C:\Users\qwe\Pictures\Screenshot 2024-03-31 192029" alt="" data-header-fix-moment-exclude="d-block" data-header-fix-moment-classes="d-none" srcset="" data-fileid="1846" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;#&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn-ru.bitrix24.ru/b27091018/landing/02a/02a1b7c34b570b711a4843255cd96c87/oenjz4f0lly_1x_png" loading="lazy" />
+        </a>
+        <ul>
+            <li><a asp-controller="Home" asp-action="Index" class="nav-button-main">Главная</a></li>
+            <li><a href="" class="nav-button-main">Рейтинг по отзывам</a></li>
+            <li><a asp-controller="Home" asp-action="RAEX" class="nav-button-main">Рейтинг по REAX</a></li>
+            <li><a asp-controller="Home" asp-action="Prof" class="nav-button-main">Профориентация</a></li>
+            <li><a href="" class="nav-button-main">Вебинары</a></li>
+            <li><a href="" class="nav-button-main">Калькулятор ЕГЭ</a></li>
+            <li><a href="" class="nav-button-main">Сравнение ВУЗов</a></li>
+            <li><a asp-controller="Home" asp-action="Guide" class="nav-button-main">Гайды</a></li>
+            <li><a href="" class="nav-button-main">Дни открытых дверей</a></li>
+            <li><a asp-controller="Home" asp-action="Kabinet" class="nav-button-main">Личный кабинет</a></li>
+        </ul>
+    </nav>
+    <div>
+        <div id="result-page" class="result-page">
+            <div class="result-title">Вам подходит профессия - <strong>Врач-Ветеринар</strong></div>
+
+            <div class="profession-image">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Врач -->
+                    <circle cx="50" cy="30" r="20" fill="#E0E0E0" /> <!-- Голова -->
+                    <path d="M30 100V60C30 50 70 50 70 60V100H30Z" fill="#FFFFFF" /> <!-- Халат -->
+                    <rect x="45" y="70" width="10" height="30" fill="#E0E0E0" /> <!-- Передняя часть халата -->
+                    <path d="M30 60V65H70V60C70 50 30 50 30 60Z" fill="#4CAF50" /> <!-- Воротник -->
+                    <circle cx="40" cy="25" r="3" fill="#333333" /> <!-- Левый глаз -->
+                    <circle cx="60" cy="25" r="3" fill="#333333" /> <!-- Правый глаз -->
+                    <path d="M43 35C45 38 55 38 57 35" stroke="#333333" stroke-width="2" /> <!-- Рот -->
+                    <path d="M35 45C35 45 45 55 65 45" stroke="#4CAF50" stroke-width="2" /> <!-- Стетоскоп -->
+                    <circle cx="65" cy="45" r="4" fill="#4CAF50" /> <!-- Конец стетоскопа -->
+                    <rect x="40" y="55" width="20" height="3" fill="#FF5722" /> <!-- Красная полоска -->
+                    <rect x="48" y="15" width="4" height="10" fill="#FFFFFF" /> <!-- Белая полоска на шапочке -->
+                    <rect x="45" y="18" width="10" height="4" fill="#FFFFFF" /> <!-- Белая полоска на шапочке (крест) -->
+                </svg>
+            </div>
+
+            <div class="result-buttons">
+                <button class="result-btn">Ознакомиться с полным результатом тестирования</button>
+                <button class="result-btn secondary">Посмотреть лучшие учебные заведения по профилю</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
