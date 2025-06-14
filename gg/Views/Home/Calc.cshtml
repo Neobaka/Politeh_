@@ -1,0 +1,1106 @@
+﻿@{
+    ViewData["Title"] = "Калькулятор Егэ";
+}
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на выбор профессии</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #512da8 0%, #03000c 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #2c3e50;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+            .header h1 {
+                color: white;
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            .header p {
+                color: #bdc3c7;
+                font-size: 1.1rem;
+            }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #3498db;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #bdc3c7;
+            margin-top: 5px;
+        }
+
+        .dropdown {
+            margin-bottom: 30px;
+        }
+
+        .dropdown-header {
+            background: #34495e;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+            .dropdown-header:hover {
+                background: #4a6741;
+                transform: translateY(-2px);
+            }
+
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .subject-card {
+            background: #34495e;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .subject-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+                transition: left 0.5s;
+            }
+
+            .subject-card:hover::before {
+                left: 100%;
+            }
+
+            .subject-card:hover {
+                transform: translateY(-5px);
+                border-color: #3498db;
+                box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+            }
+
+            .subject-card.selected {
+                background: #3498db;
+                border-color: #2980b9;
+            }
+
+        .subject-icon {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 10px;
+            background: #3498db;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .subject-card.selected .subject-icon {
+            background: white;
+            color: #3498db;
+        }
+
+        .subject-name {
+            color: white;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .subject-range {
+            color: #bdc3c7;
+            font-size: 0.9rem;
+        }
+
+        .score-input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+
+            .score-input:focus {
+                outline: 2px solid #3498db;
+            }
+
+        .section-title {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .achievements {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .achievement-toggle {
+            background: #34495e;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+            .achievement-toggle:hover {
+                transform: translateY(-2px);
+                border-color: #3498db;
+            }
+
+            .achievement-toggle.active {
+                background: #3498db;
+                border-color: #2980b9;
+            }
+
+        .toggle-switch {
+            width: 40px;
+            height: 20px;
+            background: #7f8c8d;
+            border-radius: 10px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+            .toggle-switch::after {
+                content: '';
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                background: white;
+                border-radius: 50%;
+                top: 2px;
+                left: 2px;
+                transition: all 0.3s ease;
+            }
+
+        .achievement-toggle.active .toggle-switch {
+            background: #27ae60;
+        }
+
+            .achievement-toggle.active .toggle-switch::after {
+                transform: translateX(20px);
+            }
+
+        .study-forms {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .form-toggle {
+            background: #34495e;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+        }
+
+            .form-toggle:hover {
+                transform: translateY(-2px);
+                border-color: #3498db;
+            }
+
+            .form-toggle.active {
+                background: #3498db;
+                border-color: #2980b9;
+            }
+
+        .region-dropdown {
+            background: #34495e;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            border: none;
+            width: 300px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-bottom: 30px;
+        }
+
+        .search-button {
+            width: 100%;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 20px;
+            border: none;
+            border-radius: 15px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+            .search-button:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 15px 30px rgba(52, 152, 219, 0.4);
+            }
+
+            .search-button:active {
+                transform: translateY(0);
+            }
+
+        /* Модальное окно */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            backdrop-filter: blur(5px);
+            animation: fadeIn 0.3s ease;
+        }
+
+            .modal.show {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        .modal-content {
+            background: #2c3e50;
+            border-radius: 20px;
+            padding: 0;
+            width: 90%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            animation: modalSlideIn 0.3s ease;
+        }
+
+        .modal-header {
+            padding: 25px 30px;
+            background: #34495e;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #4a5568;
+        }
+
+        .modal-title {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .close-button {
+            background: none;
+            border: none;
+            color: #bdc3c7;
+            font-size: 2rem;
+            cursor: pointer;
+            padding: 0;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+            .close-button:hover {
+                background: #e74c3c;
+                color: white;
+                transform: rotate(90deg);
+            }
+
+        .modal-body {
+            padding: 25px 30px;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+
+        .search-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 15px 50px 15px 20px;
+            border: 2px solid #4a5568;
+            border-radius: 10px;
+            background: #34495e;
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+            .search-input:focus {
+                outline: none;
+                border-color: #3498db;
+                box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+            }
+
+            .search-input::placeholder {
+                color: #95a5a6;
+            }
+
+        .search-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #95a5a6;
+            font-size: 1.2rem;
+        }
+
+        .specialties-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .specialty-item {
+            padding: 15px 20px;
+            background: #34495e;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2px;
+        }
+
+            .specialty-item:hover {
+                background: #4a6741;
+                transform: translateX(5px);
+            }
+
+            .specialty-item.selected {
+                background: #3498db;
+                color: white;
+            }
+
+        .specialty-info {
+            flex: 1;
+        }
+
+        .specialty-code {
+            color: #95a5a6;
+            font-size: 0.9rem;
+            margin-bottom: 3px;
+        }
+
+        .specialty-item.selected .specialty-code {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .specialty-name {
+            color: white;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        .specialty-level {
+            color: #95a5a6;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 4px 8px;
+            background: rgba(149, 165, 166, 0.2);
+            border-radius: 12px;
+            margin-left: 15px;
+        }
+
+        .specialty-item.selected .specialty-level {
+            background: rgba(255,255,255,0.2);
+            color: white;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px 20px;
+            color: #95a5a6;
+            font-size: 1.1rem;
+        }
+
+        @@keyframes fadeIn {
+            from
+
+        {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+
+        }
+
+        @@keyframes modalSlideIn {
+            from
+
+        {
+            opacity: 0;
+            transform: translateY(-50px) scale(0.9);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        }
+
+        @@media (max-width: 768px) {
+            .container
+
+        {
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+        }
+
+        .subjects-grid {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .stats {
+            gap: 15px;
+        }
+
+        .achievements, .study-forms {
+            flex-direction: column;
+        }
+
+        .region-dropdown {
+            width: 100%;
+        }
+
+        .modal-content {
+            width: 95%;
+            max-height: 90vh;
+        }
+
+        .modal-header, .modal-body {
+            padding: 20px;
+        }
+
+        .modal-title {
+            font-size: 1.3rem;
+        }
+
+        }
+
+        .total-score {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+            .total-score h3 {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            .total-score .score {
+                font-size: 3rem;
+                font-weight: bold;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <a href="#b314416" class="">
+            <img class="image" src="C:\Users\qwe\Pictures\Screenshot 2024-03-31 192029" alt="" data-header-fix-moment-exclude="d-block" data-header-fix-moment-classes="d-none" srcset="" data-fileid="1846" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;#&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn-ru.bitrix24.ru/b27091018/landing/02a/02a1b7c34b570b711a4843255cd96c87/oenjz4f0lly_1x_png" loading="lazy" />
+        </a>
+        <ul>
+            <li><a asp-controller="Home" asp-action="Index" class="nav-button-main">Главная</a></li>
+            <li><a href="" class="nav-button-main">Рейтинг по отзывам</a></li>
+            <li><a asp-controller="Home" asp-action="RAEX" class="nav-button-main">Рейтинг по REAX</a></li>
+            <li><a asp-controller="Home" asp-action="Prof" class="nav-button-main">Профориентация</a></li>
+            <li><a href="" class="nav-button-main">Вебинары</a></li>
+            <li><a href="" class="nav-button-main">Калькулятор ЕГЭ</a></li>
+            <li><a href="" class="nav-button-main">Сравнение ВУЗов</a></li>
+            <li><a asp-controller="Home" asp-action="Guide" class="nav-button-main">Гайды</a></li>
+            <li><a href="" class="nav-button-main">Дни открытых дверей</a></li>
+            <li><a asp-controller="Home" asp-action="Kabinet" class="nav-button-main">Личный кабинет</a></li>
+        </ul>
+    </nav>
+    
+
+        <div>
+            <div class="header">
+                <h1>Калькулятор баллов ЕГЭ</h1>
+                <p>Оценить свои шансы на поступление в вузы на <strong>23 071</strong> образовательных программ бакалавриата и специалитета на <strong>466 813</strong> бюджетных мест</p>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">23 071</div>
+                    <div class="stat-label">образовательных программ</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">466 813</div>
+                    <div class="stat-label">бюджетных мест</div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="openSpecialtyModal()">
+                    <span id="selectedSpecialty">Любое направление подготовки</span>
+                    <span>▼</span>
+                </div>
+            </div>
+
+            <!-- Модальное окно для выбора специальности -->
+            <div id="specialtyModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Выберите направление подготовки</h2>
+                        <button class="close-button" onclick="closeSpecialtyModal()">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="search-container">
+                            <input type="text" class="search-input" placeholder="Введите название..." id="specialtySearch">
+                            <span class="search-icon">🔍</span>
+                        </div>
+                        <div class="specialties-list" id="specialtiesList">
+                            <div class="specialty-item selected" onclick="selectSpecialty(this, 'any', 'Любое направление подготовки')">
+                                <div class="specialty-info">
+                                    <div class="specialty-name">Любое направление подготовки</div>
+                                </div>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '52.05.05', 'Актерское искусство в музыкальном театре')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">52.05.05</div>
+                                    <div class="specialty-name">Актерское искусство в музыкальном театре</div>
+                                </div>
+                                <span class="specialty-level">С</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '24.03.04', 'Авиастроение')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">24.03.04</div>
+                                    <div class="specialty-name">Авиастроение</div>
+                                </div>
+                                <span class="specialty-level">Б</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '15.03.04', 'Автоматизация технологических процессов и производств')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">15.03.04</div>
+                                    <div class="specialty-name">Автоматизация технологических процессов и производств</div>
+                                </div>
+                                <span class="specialty-level">Б</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '35.03.06', 'Агроинженерия')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">35.03.06</div>
+                                    <div class="specialty-name">Агроинженерия</div>
+                                </div>
+                                <span class="specialty-level">Б</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '35.03.04', 'Агрономия')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">35.03.04</div>
+                                    <div class="specialty-name">Агрономия</div>
+                                </div>
+                                <span class="specialty-level">Б</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '35.03.03', 'Агрохимия и агропочвоведение')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">35.03.03</div>
+                                    <div class="specialty-name">Агрохимия и агропочвоведение</div>
+                                </div>
+                                <span class="specialty-level">Б</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '52.05.01', 'Актерское искусство')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">52.05.01</div>
+                                    <div class="specialty-name">Актерское искусство</div>
+                                </div>
+                                <span class="specialty-level">С</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '46.03.03', 'Антропология и этнология')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">46.03.03</div>
+                                    <div class="specialty-name">Антропология и этнология</div>
+                                </div>
+                                <span class="specialty-level">Б</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '46.03.04', 'Археология')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">46.03.04</div>
+                                    <div class="specialty-name">Археология</div>
+                                </div>
+                                <span class="specialty-level">Б</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '07.03.01', 'Архитектура')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">07.03.01</div>
+                                    <div class="specialty-name">Архитектура</div>
+                                </div>
+                                <span class="specialty-level">Б</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '03.05.01', 'Астрономия')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">03.05.01</div>
+                                    <div class="specialty-name">Астрономия</div>
+                                </div>
+                                <span class="specialty-level">С</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '14.05.02', 'Атомные станции: проектирование, эксплуатация и инжиниринг')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">14.05.02</div>
+                                    <div class="specialty-name">Атомные станции: проектирование, эксплуатация и инжиниринг</div>
+                                </div>
+                                <span class="specialty-level">С</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '25.03.03', 'Аэронавигация')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">25.03.03</div>
+                                    <div class="specialty-name">Аэронавигация</div>
+                                </div>
+                                <span class="specialty-level">Б</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '24.03.03', 'Баллистика и гидроаэродинамика')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">24.03.03</div>
+                                    <div class="specialty-name">Баллистика и гидроаэродинамика</div>
+                                </div>
+                                <span class="specialty-level">Б</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '10.05.05', 'Безопасность информационных технологий в правоохранительной сфере')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">10.05.05</div>
+                                    <div class="specialty-name">Безопасность информационных технологий в правоохранительной сфере</div>
+                                </div>
+                                <span class="specialty-level">С</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '51.03.06', 'Библиотечно-информационная деятельность')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">51.03.06</div>
+                                    <div class="specialty-name">Библиотечно-информационная деятельность</div>
+                                </div>
+                                <span class="specialty-level">Б</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '38.03.05', 'Бизнес-информатика')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">38.03.05</div>
+                                    <div class="specialty-name">Бизнес-информатика</div>
+                                </div>
+                                <span class="specialty-level">Б</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '06.05.01', 'Биоинженерия и биоинформатика')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">06.05.01</div>
+                                    <div class="specialty-name">Биоинженерия и биоинформатика</div>
+                                </div>
+                                <span class="specialty-level">С</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '06.03.01', 'Биология')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">06.03.01</div>
+                                    <div class="specialty-name">Биология</div>
+                                </div>
+                                <span class="specialty-level">Б</span>
+                            </div>
+                            <div class="specialty-item" onclick="selectSpecialty(this, '12.03.04', 'Биотехнические системы и технологии')">
+                                <div class="specialty-info">
+                                    <div class="specialty-code">12.03.04</div>
+                                    <div class="specialty-name">Биотехнические системы и технологии</div>
+                                </div>
+                                <span class="specialty-level">Б</span>
+                            </div>
+                        </div>
+                        <div class="no-results" id="noResults" style="display: none;">
+                            Ничего не найдено. Попробуйте изменить запрос.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subjects-grid">
+                <div class="subject-card" onclick="toggleSubject(this, 'russian')">
+                    <div class="subject-icon">📝</div>
+                    <div class="subject-name">Русский язык</div>
+                    <div class="subject-range">от 36 до 100</div>
+                    <input type="number" class="score-input" placeholder="Балл" min="36" max="100" style="display: none;">
+                </div>
+
+                <div class="subject-card" onclick="toggleSubject(this, 'math')">
+                    <div class="subject-icon">🔢</div>
+                    <div class="subject-name">Математика</div>
+                    <div class="subject-range">от 27 до 100</div>
+                    <input type="number" class="score-input" placeholder="Балл" min="27" max="100" style="display: none;">
+                </div>
+
+                <div class="subject-card" onclick="toggleSubject(this, 'social')">
+                    <div class="subject-icon">🏛️</div>
+                    <div class="subject-name">Обществознание</div>
+                    <div class="subject-range">от 42 до 100</div>
+                    <input type="number" class="score-input" placeholder="Балл" min="42" max="100" style="display: none;">
+                </div>
+
+                <div class="subject-card" onclick="toggleSubject(this, 'foreign')">
+                    <div class="subject-icon">🌍</div>
+                    <div class="subject-name">Иностранный язык</div>
+                    <div class="subject-range">от 22 до 100</div>
+                    <input type="number" class="score-input" placeholder="Балл" min="22" max="100" style="display: none;">
+                </div>
+
+                <div class="subject-card" onclick="toggleSubject(this, 'ict')">
+                    <div class="subject-icon">💻</div>
+                    <div class="subject-name">ИКТ</div>
+                    <div class="subject-range">от 40 до 100</div>
+                    <input type="number" class="score-input" placeholder="Балл" min="40" max="100" style="display: none;">
+                </div>
+
+                <div class="subject-card" onclick="toggleSubject(this, 'biology')">
+                    <div class="subject-icon">🧬</div>
+                    <div class="subject-name">Биология</div>
+                    <div class="subject-range">от 36 до 100</div>
+                    <input type="number" class="score-input" placeholder="Балл" min="36" max="100" style="display: none;">
+                </div>
+
+                <div class="subject-card" onclick="toggleSubject(this, 'geography')">
+                    <div class="subject-icon">🌍</div>
+                    <div class="subject-name">География</div>
+                    <div class="subject-range">от 37 до 100</div>
+                    <input type="number" class="score-input" placeholder="Балл" min="37" max="100" style="display: none;">
+                </div>
+
+                <div class="subject-card" onclick="toggleSubject(this, 'chemistry')">
+                    <div class="subject-icon">⚗️</div>
+                    <div class="subject-name">Химия</div>
+                    <div class="subject-range">от 36 до 100</div>
+                    <input type="number" class="score-input" placeholder="Балл" min="36" max="100" style="display: none;">
+                </div>
+
+                <div class="subject-card" onclick="toggleSubject(this, 'physics')">
+                    <div class="subject-icon">⚛️</div>
+                    <div class="subject-name">Физика</div>
+                    <div class="subject-range">от 36 до 100</div>
+                    <input type="number" class="score-input" placeholder="Балл" min="36" max="100" style="display: none;">
+                </div>
+
+                <div class="subject-card" onclick="toggleSubject(this, 'literature')">
+                    <div class="subject-icon">📚</div>
+                    <div class="subject-name">Литература</div>
+                    <div class="subject-range">от 32 до 100</div>
+                    <input type="number" class="score-input" placeholder="Балл" min="32" max="100" style="display: none;">
+                </div>
+
+                <div class="subject-card" onclick="toggleSubject(this, 'history')">
+                    <div class="subject-icon">🏛️</div>
+                    <div class="subject-name">История</div>
+                    <div class="subject-range">от 32 до 100</div>
+                    <input type="number" class="score-input" placeholder="Балл" min="32" max="100" style="display: none;">
+                </div>
+
+                <div class="subject-card" onclick="toggleSubject(this, 'additional')">
+                    <div class="subject-icon">➕</div>
+                    <div class="subject-name">Доп. экзамен</div>
+                    <div class="subject-range"></div>
+                    <input type="number" class="score-input" placeholder="Балл" min="0" max="100" style="display: none;">
+                </div>
+            </div>
+
+            <div class="total-score" id="totalScore" style="display: none;">
+                <h3>Общий балл</h3>
+                <div class="score" id="scoreValue">0</div>
+            </div>
+
+            <div class="dropdown">
+                <div class="dropdown-header">
+                    <span>Вся Россия</span>
+                    <span>▼</span>
+                </div>
+            </div>
+
+            <div class="section-title">Укажите индивидуальные достижения</div>
+            <div class="achievements">
+                <div class="achievement-toggle" onclick="toggleAchievement(this)">
+                    <span>Медаль</span>
+                    <div class="toggle-switch"></div>
+                </div>
+                <div class="achievement-toggle" onclick="toggleAchievement(this)">
+                    <span>ГТО</span>
+                    <div class="toggle-switch"></div>
+                </div>
+                <div class="achievement-toggle" onclick="toggleAchievement(this)">
+                    <span>Волонтерство</span>
+                    <div class="toggle-switch"></div>
+                </div>
+            </div>
+
+            <div class="section-title">Укажите формы обучения</div>
+            <div class="study-forms">
+                <div class="form-toggle active" onclick="toggleForm(this)">Очная</div>
+                <div class="form-toggle" onclick="toggleForm(this)">Заочная</div>
+                <div class="form-toggle" onclick="toggleForm(this)">Очно-заочная</div>
+            </div>
+
+            <select class="region-dropdown">
+                <option>Без группировки</option>
+                <option>По регионам</option>
+                <option>По федеральным округам</option>
+            </select>
+
+            <button class="search-button" onclick="search()">Искать</button>
+        </div>
+
+        <script>
+            let selectedSubjects = new Set();
+            let scores = {};
+            let selectedSpecialtyData = { code: 'any', name: 'Любое направление подготовки' };
+
+            function openSpecialtyModal() {
+                const modal = document.getElementById('specialtyModal');
+                modal.classList.add('show');
+                document.body.style.overflow = 'hidden';
+
+                // Сброс поиска
+                document.getElementById('specialtySearch').value = '';
+                filterSpecialties('');
+            }
+
+            function closeSpecialtyModal() {
+                const modal = document.getElementById('specialtyModal');
+                modal.classList.remove('show');
+                document.body.style.overflow = 'auto';
+            }
+
+            function selectSpecialty(element, code, name) {
+                // Убираем выделение с предыдущего элемента
+                document.querySelectorAll('.specialty-item').forEach(item => {
+                    item.classList.remove('selected');
+                });
+
+                // Выделяем выбранный элемент
+                element.classList.add('selected');
+
+                // Сохраняем выбранную специальность
+                selectedSpecialtyData = { code, name };
+
+                // Обновляем отображение в dropdown
+                document.getElementById('selectedSpecialty').textContent = name;
+
+                // Закрываем модальное окно
+                setTimeout(() => {
+                    closeSpecialtyModal();
+                }, 300);
+            }
+
+            function filterSpecialties(searchTerm) {
+                const specialties = document.querySelectorAll('.specialty-item');
+                const noResults = document.getElementById('noResults');
+                let visibleCount = 0;
+
+                specialties.forEach(specialty => {
+                    const nameElement = specialty.querySelector('.specialty-name');
+                    const codeElement = specialty.querySelector('.specialty-code');
+
+                    if (nameElement) {
+                        const name = nameElement.textContent.toLowerCase();
+                        const code = codeElement ? codeElement.textContent.toLowerCase() : '';
+                        const search = searchTerm.toLowerCase();
+
+                        if (name.includes(search) || code.includes(search)) {
+                            specialty.style.display = 'flex';
+                            visibleCount++;
+                        } else {
+                            specialty.style.display = 'none';
+                        }
+                    }
+                });
+
+                // Показываем/скрываем сообщение "Ничего не найдено"
+                if (visibleCount === 0 && searchTerm.length > 0) {
+                    noResults.style.display = 'block';
+                } else {
+                    noResults.style.display = 'none';
+                }
+            }
+
+            // Обработчик поиска
+            document.addEventListener('DOMContentLoaded', function() {
+                const searchInput = document.getElementById('specialtySearch');
+                if (searchInput) {
+                    searchInput.addEventListener('input', function() {
+                        filterSpecialties(this.value);
+                    });
+                }
+
+                // Закрытие модального окна при клике вне его
+                const modal = document.getElementById('specialtyModal');
+                modal.addEventListener('click', function(e) {
+                    if (e.target === modal) {
+                        closeSpecialtyModal();
+                    }
+                });
+
+                // Закрытие модального окна по Escape
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && modal.classList.contains('show')) {
+                        closeSpecialtyModal();
+                    }
+                });
+            });
+
+            function toggleSubject(element, subject) {
+                const input = element.querySelector('.score-input');
+
+                if (element.classList.contains('selected')) {
+                    element.classList.remove('selected');
+                    input.style.display = 'none';
+                    selectedSubjects.delete(subject);
+                    delete scores[subject];
+                } else {
+                    element.classList.add('selected');
+                    input.style.display = 'block';
+                    selectedSubjects.add(subject);
+                    input.focus();
+                }
+
+                input.addEventListener('input', function() {
+                    scores[subject] = parseInt(this.value) || 0;
+                    updateTotalScore();
+                });
+
+                updateTotalScore();
+            }
+
+            function updateTotalScore() {
+                const total = Object.values(scores).reduce((sum, score) => sum + score, 0);
+                const totalScoreElement = document.getElementById('totalScore');
+                const scoreValueElement = document.getElementById('scoreValue');
+
+                if (total > 0) {
+                    totalScoreElement.style.display = 'block';
+                    scoreValueElement.textContent = total;
+                } else {
+                    totalScoreElement.style.display = 'none';
+                }
+            }
+
+            function toggleAchievement(element) {
+                element.classList.toggle('active');
+            }
+
+            function toggleForm(element) {
+                document.querySelectorAll('.form-toggle').forEach(toggle => {
+                    toggle.classList.remove('active');
+                });
+                element.classList.add('active');
+            }
+
+            function search() {
+                const selectedSubjectsArray = Array.from(selectedSubjects);
+                const totalScore = Object.values(scores).reduce((sum, score) => sum + score, 0);
+
+                if (selectedSubjectsArray.length === 0) {
+                    alert('Выберите хотя бы один предмет');
+                    return;
+                }
+
+                console.log('Поиск с параметрами:');
+                console.log('Выбранная специальность:', selectedSpecialtyData);
+                console.log('Выбранные предметы:', selectedSubjectsArray);
+                console.log('Баллы:', scores);
+                console.log('Общий балл:', totalScore);
+
+                // Здесь можно добавить логику отправки данных на сервер
+                alert(`Поиск выполнен!\nСпециальность: ${selectedSpecialtyData.name}\nОбщий балл: ${totalScore}`);
+            }
+
+            // Добавляем анимацию при загрузке
+            document.addEventListener('DOMContentLoaded', function() {
+                const cards = document.querySelectorAll('.subject-card');
+                cards.forEach((card, index) => {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        card.style.transition = 'all 0.5s ease';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, index * 100);
+                });
+            });
+        </script>
+    </body>
+</html>

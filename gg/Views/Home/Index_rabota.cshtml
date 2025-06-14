@@ -1,0 +1,600 @@
+﻿@{
+    ViewData["Title"] = "Главная";
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КудаПоступим.ру - Для работодателей</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #512da8 0%, #03000c 100%);
+            min-height: 100vh;
+        }
+
+        .nav-bar {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-item {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #6B46C1;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+            .nav-item:hover {
+                background: white;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 60px 40px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+            .header-section h1 {
+                font-size: 3rem;
+                color: #8B5CF6;
+                margin-bottom: 20px;
+                font-weight: 700;
+                background: linear-gradient(135deg, #8B5CF6, #EC4899);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .header-section p {
+                font-size: 1.2rem;
+                color: #4B5563;
+                line-height: 1.6;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 30px;
+        }
+
+        .universities-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .university-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            display: grid;
+            grid-template-columns: 300px 1fr auto;
+            min-height: 200px;
+        }
+
+            .university-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            }
+
+        .university-image {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            min-height: 200px;
+        }
+
+            .university-image::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 50%;
+                background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            }
+
+        .image-text {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 12px;
+            font-weight: 500;
+            z-index: 1;
+        }
+
+        .university-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .university-location {
+            color: #6B7280;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .university-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1F2937;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+            .university-name a {
+                text-decoration: none;
+                color: #8B5CF6;
+            }
+
+                .university-name a:hover {
+                    text-decoration: underline;
+                }
+
+        .university-rating {
+            color: #6B7280;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #8B5CF6;
+            color: white;
+        }
+
+            .btn-primary:hover {
+                background: #7C3AED;
+                transform: translateY(-1px);
+            }
+
+        .btn-secondary {
+            background: #F3F4F6;
+            color: #6B7280;
+            border: 1px solid #E5E7EB;
+        }
+
+            .btn-secondary:hover {
+                background: #E5E7EB;
+            }
+
+        .partnership-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-width: 200px;
+            border-left: 1px solid #E5E7EB;
+        }
+
+        .partnership-stats {
+            margin-bottom: 15px;
+        }
+
+        .stat-item {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .stat-value {
+            font-weight: 600;
+            color: #059669;
+        }
+
+        .filters-panel {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 20px;
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .filters-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1F2937;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .filter-group {
+            margin-bottom: 20px;
+        }
+
+        .filter-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #374151;
+            margin-bottom: 8px;
+        }
+
+        .filter-select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #D1D5DB;
+            border-radius: 8px;
+            font-size: 14px;
+            background: white;
+        }
+
+        .filter-checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .filter-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+            .filter-checkbox input {
+                margin: 0;
+            }
+
+            .filter-checkbox label {
+                font-size: 13px;
+                color: #4B5563;
+                margin: 0;
+            }
+
+        .apply-filters {
+            width: 100%;
+            padding: 12px;
+            background: #8B5CF6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+            .apply-filters:hover {
+                background: #7C3AED;
+            }
+
+        @@media (max-width: 1024px) {
+            .main-content
+
+        {
+            grid-template-columns: 1fr;
+        }
+
+        .university-card {
+            grid-template-columns: 1fr;
+        }
+
+        .partnership-info {
+            border-left: none;
+            border-top: 1px solid #E5E7EB;
+        }
+
+        }
+
+        @@media (max-width: 768px) {
+            .header-section h1
+
+        {
+            font-size: 2rem;
+        }
+
+        .university-image {
+            min-height: 150px;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <button class="nav-item"><a asp-controller="Home" asp-action="Index">Главная</a></button>
+        <button class="nav-item"><a asp-controller="Home" asp-action="Index">Рейтинг по отзывам</a></button>
+        <button class="nav-item"><a asp-controller="Home" asp-action="Index">Рейтинг по REAX</a></button>
+        <button class="nav-item"><a asp-controller="Home" asp-action="Prof">Профориентация</a></button>
+        <button class="nav-item"><a asp-controller="Home" asp-action="Index">Вебинары</a></button>
+        <button class="nav-item"><a asp-controller="Home" asp-action="Calc">Калькулятор ЕГЭ</a></button>
+        <button class="nav-item"><a asp-controller="Home" asp-action="Index">Сравнение ВУЗов</a></button>
+        <button class="nav-item"><a asp-controller="Home" asp-action="Guide">Гайды</a></button>
+        <button class="nav-item"><a asp-controller="Home" asp-action="Open_doors">Дни открытых дверей</a></button>
+        <button class="nav-item"><a asp-controller="Home" asp-action="Index">Работодателям</a></button>
+        <button class="nav-item"><a asp-controller="Home" asp-action="Index">Личный кабинет</a></button>
+    </div>
+
+    <div class="container">
+        <div class="header-section">
+            <h1>КудаПоступим.ру</h1>
+            <p>Найдите лучших выпускников и студентов по отзывам от реальных работодателей!</p>
+            <br>
+            <p>КудаПоступим.ру — идеальное средство для HR-специалистов и рекрутеров, которые стремятся найти талантливых кандидатов из лучших образовательных программ, соответствующих требованиям компании и потребностям рынка</p>
+        </div>
+
+        <div class="main-content">
+            <div class="universities-grid">
+                <div class="university-card">
+                    <div class="university-image" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 200%22><rect width=%22300%22 height=%22200%22 fill=%22%234F46E5%22/><text x=%22150%22 y=%22100%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2224%22 font-family=%22Arial%22>СПбПУ</text></svg>')">
+                        <div class="image-text">от 44 000 ₽ стартовая</div>
+                    </div>
+                    <div class="university-info">
+                        <div class="university-location">Санкт-Петербург</div>
+                        <div class="university-name">
+                            <a href="#">Санкт-Петербургский политехнический университет Петра Великого</a>
+                        </div>
+                        <div class="university-rating">№8 в рейтинге по трудоустройству</div>
+                        <div class="action-buttons">
+                            <button class="btn btn-primary">Найти выпускников</button>
+                            <button class="btn btn-secondary">Разместить вакансию</button>
+                            <button class="btn btn-secondary">Программы стажировок</button>
+                        </div>
+                    </div>
+                    <div class="partnership-info">
+                        <div class="partnership-stats">
+                            <div class="stat-item">Выпускников в год: <span class="stat-value">5,200</span></div>
+                            <div class="stat-item">Трудоустройство: <span class="stat-value">94%</span></div>
+                            <div class="stat-item">Компании-партнеры: <span class="stat-value">150+</span></div>
+                        </div>
+                        <button class="btn btn-primary">Стать партнером</button>
+                    </div>
+                </div>
+
+                <div class="university-card">
+                    <div class="university-image" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 200%22><rect width=%22300%22 height=%22200%22 fill=%22%23DC2626%22/><text x=%22150%22 y=%22100%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2224%22 font-family=%22Arial%22>ИТМО</text></svg>')">
+                        <div class="image-text">от 54 000 ₽ стартовая</div>
+                    </div>
+                    <div class="university-info">
+                        <div class="university-location">Санкт-Петербург</div>
+                        <div class="university-name">
+                            <a href="#">Университет ИТМО</a>
+                        </div>
+                        <div class="university-rating">№14 в рейтинге по трудоустройству</div>
+                        <div class="action-buttons">
+                            <button class="btn btn-primary">Найти выпускников</button>
+                            <button class="btn btn-secondary">Разместить вакансию</button>
+                            <button class="btn btn-secondary">IT-стажировки</button>
+                        </div>
+                    </div>
+                    <div class="partnership-info">
+                        <div class="partnership-stats">
+                            <div class="stat-item">Выпускников в год: <span class="stat-value">3,800</span></div>
+                            <div class="stat-item">Трудоустройство: <span class="stat-value">96%</span></div>
+                            <div class="stat-item">IT-компании: <span class="stat-value">200+</span></div>
+                        </div>
+                        <button class="btn btn-primary">Стать партнером</button>
+                    </div>
+                </div>
+
+                <div class="university-card">
+                    <div class="university-image" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 200%22><rect width=%22300%22 height=%22200%22 fill=%22%23059669%22/><text x=%22150%22 y=%22100%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2220%22 font-family=%22Arial%22>РУДН</text></svg>')">
+                        <div class="image-text">от 38 000 ₽ стартовая</div>
+                    </div>
+                    <div class="university-info">
+                        <div class="university-location">Москва</div>
+                        <div class="university-name">
+                            <a href="#">Российский университет дружбы народов</a>
+                        </div>
+                        <div class="university-rating">№19 в рейтинге по трудоустройству</div>
+                        <div class="action-buttons">
+                            <button class="btn btn-primary">Найти выпускников</button>
+                            <button class="btn btn-secondary">Разместить вакансию</button>
+                            <button class="btn btn-secondary">Международные программы</button>
+                        </div>
+                    </div>
+                    <div class="partnership-info">
+                        <div class="partnership-stats">
+                            <div class="stat-item">Выпускников в год: <span class="stat-value">4,500</span></div>
+                            <div class="stat-item">Трудоустройство: <span class="stat-value">89%</span></div>
+                            <div class="stat-item">Компании-партнеры: <span class="stat-value">120+</span></div>
+                        </div>
+                        <button class="btn btn-primary">Стать партнером</button>
+                    </div>
+                </div>
+
+                <div class="university-card">
+                    <div class="university-image" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 200%22><rect width=%22300%22 height=%22200%22 fill=%22%23B91C1C%22/><text x=%22150%22 y=%22100%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2220%22 font-family=%22Arial%22>СПбГУ</text></svg>')">
+                        <div class="image-text">от 48 000 ₽ стартовая</div>
+                    </div>
+                    <div class="university-info">
+                        <div class="university-location">Санкт-Петербург</div>
+                        <div class="university-name">
+                            <a href="#">Санкт-Петербургский государственный университет</a>
+                        </div>
+                        <div class="university-rating">№3 в рейтинге по трудоустройству</div>
+                        <div class="action-buttons">
+                            <button class="btn btn-primary">Найти выпускников</button>
+                            <button class="btn btn-secondary">Разместить вакансию</button>
+                            <button class="btn btn-secondary">Программы МВА</button>
+                        </div>
+                    </div>
+                    <div class="partnership-info">
+                        <div class="partnership-stats">
+                            <div class="stat-item">Выпускников в год: <span class="stat-value">6,200</span></div>
+                            <div class="stat-item">Трудоустройство: <span class="stat-value">97%</span></div>
+                            <div class="stat-item">Компании-партнеры: <span class="stat-value">180+</span></div>
+                        </div>
+                        <button class="btn btn-primary">Стать партнером</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filters-panel">
+                <h3 class="filters-title">Параметры поиска</h3>
+
+                <div class="filter-group">
+                    <label class="filter-label">Город</label>
+                    <select class="filter-select">
+                        <option>Все города</option>
+                        <option>Москва</option>
+                        <option>Санкт-Петербург</option>
+                        <option>Новосибирск</option>
+                        <option>Екатеринбург</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">Направление подготовки</label>
+                    <select class="filter-select">
+                        <option>Все направления</option>
+                        <option>IT и программирование</option>
+                        <option>Инженерия</option>
+                        <option>Экономика и менеджмент</option>
+                        <option>Юриспруденция</option>
+                        <option>Медицина</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">Уровень образования</label>
+                    <div class="filter-checkbox-group">
+                        <div class="filter-checkbox">
+                            <input type="checkbox" id="bachelor">
+                            <label for="bachelor">Бакалавриат</label>
+                        </div>
+                        <div class="filter-checkbox">
+                            <input type="checkbox" id="master">
+                            <label for="master">Магистратура</label>
+                        </div>
+                        <div class="filter-checkbox">
+                            <input type="checkbox" id="specialist">
+                            <label for="specialist">Специалитет</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">Стартовая зарплата (тыс. ₽)</label>
+                    <select class="filter-select">
+                        <option>Любая</option>
+                        <option>от 30</option>
+                        <option>от 40</option>
+                        <option>от 50</option>
+                        <option>от 60</option>
+                        <option>от 80</option>
+                        <option>от 100</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">Процент трудоустройства</label>
+                    <select class="filter-select">
+                        <option>Любой</option>
+                        <option>от 90%</option>
+                        <option>от 85%</option>
+                        <option>от 80%</option>
+                        <option>от 75%</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">Возможности для работодателей</label>
+                    <div class="filter-checkbox-group">
+                        <div class="filter-checkbox">
+                            <input type="checkbox" id="internship">
+                            <label for="internship">Программы стажировок</label>
+                        </div>
+                        <div class="filter-checkbox">
+                            <input type="checkbox" id="career-center">
+                            <label for="career-center">Карьерный центр</label>
+                        </div>
+                        <div class="filter-checkbox">
+                            <input type="checkbox" id="job-fair">
+                            <label for="job-fair">Ярмарки вакансий</label>
+                        </div>
+                        <div class="filter-checkbox">
+                            <input type="checkbox" id="partnerships">
+                            <label for="partnerships">Корпоративные программы</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="apply-filters">Применить фильтры</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Простая интерактивность для демонстрации
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function() {
+                console.log('Кнопка нажата:', this.textContent);
+            });
+        });
+
+        document.querySelector('.apply-filters').addEventListener('click', function() {
+            console.log('Применение фильтров...');
+            // Здесь была бы логика фильтрации
+        });
+
+        // Анимация при наведении на карточки
+        document.querySelectorAll('.university-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>

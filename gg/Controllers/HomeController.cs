@@ -66,6 +66,21 @@ namespace gg.Controllers
             return View();
         }
 
+        public IActionResult Calc()
+        {
+            return View();
+        }
+
+        public IActionResult Open_doors()
+        {
+            return View();
+        }
+
+        public IActionResult Index_rabota()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
