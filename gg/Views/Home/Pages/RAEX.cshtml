@@ -1,0 +1,105 @@
+﻿@{
+    ViewData["Title"] = "Рейтинг RAEX";
+}
+
+
+<body style="    margin: 0px; width: 100%; background-color: #261257;">
+    <div>
+        <header>
+            <div>
+                <nav class="nav-bar">
+                    <ul>
+                        <li><a asp-controller="Home" asp-action="Index" class="nav-item">Главная</a></li>
+                        <li><a href="" class="nav-item">Рейтинг по отзывам</a></li>
+                        <li><a asp-controller="Home" asp-action="RAEX" class="nav-item">Рейтинг по REAX</a></li>
+                        <li><a asp-controller="Home" asp-action="Prof" class="nav-item">Профориентация</a></li>
+                        <li><a href="" class="nav-item">Вебинары</a></li>
+                        <li><a asp-controller="Home" asp-action="Calc" class="nav-item">Калькулятор ЕГЭ</a></li>
+                        <li><a href="" class="nav-item">Сравнение ВУЗов</a></li>
+                        <li><a asp-controller="Home" asp-action="Guide" class="nav-item">Гайды</a></li>
+                        <li><a asp-controller="Home" asp-action="Open_doors" class="nav-item">Дни открытых дверей</a></li>
+                        <li><a asp-controller="Home" asp-action="Kabinet" class="nav-item">Личный кабинет</a></li>
+                        <li><a asp-controller="Home" asp-action="Index_rabota" class="nav-item">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <section style="    margin-top: 5%;
+        padding-top: 0;">
+
+        <h2>Рейтинг лучших вузов России RAEX-100, 2023 год</h2>
+        <p>
+            Рейтинговое агентство RAEX («РАЭКС-Аналитика») подготовило двенадцатый рейтинг 100 лучших вузов России.
+            Ежегодный рейтинг лучших вузов России RAEX-100 зафиксировал усиление позиций медицинских, педагогических и сельскохозяйственных вузов.
+        </p>
+        <nav>
+            <ul>
+                <li><a href="#" class="choose_RAEX">Рейтинг</a></li>
+                <li><a href="#" class="choose_RAEX">Мнения рынка</a></li>
+                <li><a href="#" class="choose_RAEX">Аналитика</a></li>
+                <li><a href="#" class="choose_RAEX">Методика</a></li>
+            </ul>
+        </nav>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Название</th>
+                    <th>Место, 2022 год</th>
+                    <th>Рейтинговый функционал (балл)</th>
+                    <th>Условия для получения качественного образования, ранг</th>
+                    <th>Уровень востребованности выпускников работодателями, ранг</th>
+                    <th>Уровень научно-исследовательской деятельности, ранг</th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="msu-logo.png" alt="логотип МГУ"> Московский государственный университет имени М.В. Ломоносова</td>
+                    <td>1</td>
+                    <td>4.7608</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+
+
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td><img src="msu-logo.png" alt="логотип МФТИ"> Московский физико-технический институт</td>
+                    <td>2</td>
+                    <td>4.6507</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+
+
+            <tbody>
+                <tr>
+                    <td>3</td>
+                    <td><img src="msu-logo.png" alt="логотип СПГУ"> Санкт-Петербургский государственный университет</td>
+                    <td>3</td>
+                    <td>4.5631</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>11</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+        </table>
+
+    </section>
+
+</body>

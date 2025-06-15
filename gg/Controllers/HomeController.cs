@@ -23,22 +23,22 @@ namespace gg.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View("~/Views/Home/Pages/Index.cshtml");
         }
 
         
 
         public IActionResult RAEX()
         {
-            return View();
+            return View("~/Views/Home/Pages/RAEX.cshtml");
         }
         public IActionResult Kabinet()
         {
-            return View();
+            return View("~/Views/Home/Pages/Kabinet.cshtml");
         }
         public IActionResult Guide()
         {
-            return View();
+            return View("~/Views/Home/Pages/Guide.cshtml");
         }
 
         public IActionResult Page_vuz()
@@ -58,7 +58,7 @@ namespace gg.Controllers
 
         public IActionResult Prof()
         {
-            return View();
+            return View("~/Views/Home/Pages/Prof.cshtml");
         }
 
         public IActionResult Result()
@@ -68,17 +68,23 @@ namespace gg.Controllers
 
         public IActionResult Calc()
         {
-            return View();
+            return View("~/Views/Home/Pages/Calc.cshtml");
         }
 
         public IActionResult Open_doors()
         {
-            return View();
+            return View("~/Views/Home/Pages/Open_doors.cshtml");
         }
 
         public IActionResult Index_rabota()
         {
-            return View();
+            return View("~/Views/Home/Pages/Index_rabota.cshtml");
+        }
+
+
+        public IActionResult Private_office()
+        {
+            return View("~/Views/Home/Pages/Private_office.cshtml");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

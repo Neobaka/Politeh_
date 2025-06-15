@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Гайды";
+}
+
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body style="background: linear-gradient(135deg, #512da8 0%, #03000c 100%);">
+    <div>
+        <header>
+            <div>
+                <nav class="nav-bar">
+                    <ul>
+                        <li><a asp-controller="Home" asp-action="Index" class="nav-item">Главная</a></li>
+                        <li><a href="" class="nav-item">Рейтинг по отзывам</a></li>
+                        <li><a asp-controller="Home" asp-action="RAEX" class="nav-item">Рейтинг по REAX</a></li>
+                        <li><a asp-controller="Home" asp-action="Prof" class="nav-item">Профориентация</a></li>
+                        <li><a href="" class="nav-item">Вебинары</a></li>
+                        <li><a asp-controller="Home" asp-action="Calc" class="nav-item">Калькулятор ЕГЭ</a></li>
+                        <li><a href="" class="nav-item">Сравнение ВУЗов</a></li>
+                        <li><a asp-controller="Home" asp-action="Guide" class="nav-item">Гайды</a></li>
+                        <li><a asp-controller="Home" asp-action="Open_doors" class="nav-item">Дни открытых дверей</a></li>
+                        <li><a asp-controller="Home" asp-action="Kabinet" class="nav-item">Личный кабинет</a></li>
+                        <li><a asp-controller="Home" asp-action="Index_rabota" class="nav-item">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+
+    <div class="feed">
+        <!-- Пост 1 -->
+        <div class="post">
+            <div class="post-header">
+                <h2 class="post-title">Короткая информация о том, как поступить в ВУЗ мечты</h2>
+                <p class="post-description">Что надо сделать в первую очередь, на какие этапы можно это разделить и как наш сайт сможет вам помочь</p>
+            </div>
+            <img src="https://i.ytimg.com/vi/jp9XFJvbds0/maxresdefault.jpg" alt="Post image" class="post-image">
+            <div class="post-stats">
+                <div class="post-views">
+                    <span>10.3K показов</span>
+                    <span>•</span>
+                    <span>4.7K открытий</span>
+                </div>
+                <div class="post-actions">
+                    <button class="action-button like-button">
+                        <i class="far fa-heart"></i>
+                        <span class="likes-count">115</span>
+                    </button>
+                    <button class="action-button">
+                        <i class="far fa-comment"></i>
+                    </button>
+                    <button class="action-button bookmark-button">
+                        <i class="far fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Пост 2 (пример дополнительного поста) -->
+        <div class="post">
+            <div class="post-header">
+                <h2 class="post-title">Как подготовиться к ЕГЭ</h2>
+                <p class="post-description">Полезные советы и рекомендации для успешной сдачи экзаменов</p>
+            </div>
+            <img src="https://i.ytimg.com/vi/l_rIuXp3H_Q/maxresdefault.jpg" alt="Post image" class="post-image">
+            <div class="post-stats">
+                <div class="post-views">
+                    <span>8.2K показов</span>
+                    <span>•</span>
+                    <span>3.1K открытий</span>
+                </div>
+                <div class="post-actions">
+                    <button class="action-button like-button">
+                        <i class="far fa-heart"></i>
+                        <span class="likes-count">89</span>
+                    </button>
+                    <button class="action-button">
+                        <i class="far fa-comment"></i>
+                    </button>
+                    <button class="action-button bookmark-button">
+                        <i class="far fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+

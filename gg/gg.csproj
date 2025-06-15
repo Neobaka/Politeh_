@@ -13,7 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="Views\Home\Calc.cshtml">
+    <Content Update="Views\Home\Pages\Calc.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Views\Home\Pages\Private_office.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>

@@ -39,6 +39,49 @@ nav ul {
                 text-decoration: underline; /* Подчеркиваем ссылки при наведении */
             }
 
+
+
+.nav-bar {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-item {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #6B46C1;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+    .nav-item:hover {
+        background: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-item.active {
+        background: #8B5CF6;
+        color: white;
+    }
+
 .image {
     position: absolute; /* Позиционируем картинку абсолютно внутри родительского блока */
     top: 50%; /* Положение картинки относительно верхнего края блока навигации */
@@ -66,7 +109,7 @@ nav ul {
         object-fit: cover;
     }
 
-.tuition-fee {
+/*.tuition-fee {
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -75,7 +118,7 @@ nav ul {
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 14px;
-}
+}*/
 
 .university-info {
     flex: 2;
@@ -104,24 +147,11 @@ nav ul {
     font-family: sans-serif;
 }
 
-.reviews-button {
-    background-color: #ff5b79;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    align-self: flex-start;
-    position: relative;
-    bottom: -30%;
-    width: 15%;
-    font-size: 17px;
-    font-family: sans-serif;
-}
 
-    .reviews-button:hover {
-        background-color: #e04b6c;
-    }
+
+.reviews-button:hover {
+    background-color: #e04b6c;
+}
 
 .scores {
     display: flex;
@@ -263,7 +293,6 @@ div#myBtnContainer {
 }
 
 .activity {
-    
 }
 
 .activity-ul {
@@ -276,7 +305,6 @@ div#myBtnContainer {
 
 
 .more {
-    
 }
 
 .more-ul {
@@ -439,15 +467,10 @@ table {
 }
 
 
-.container {
-    display: flex;
-    align-items: center;
+/*.container {
     padding: 50px;
-    background-color: #f9f9f9;
-    justify-content: space-evenly;
-    flex-direction: column;
     background: linear-gradient(135deg, #512da8 0%, #03000c 100%);
-}
+}*/
 
 .registration {
     width: 45%;

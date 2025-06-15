@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ITnLk9No3/3NqIdoFExzJBVXvQtpyki9YcLbpBFo4I4=",
+  "Hash": "Artvis3wwhW8KooHoGjOHZ5wKcc1nxphWC6h/LlL/Mc=",
   "Source": "gg",
   "BasePath": "_content/gg",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "au9o078lqi",
-      "Integrity": "0oPRot6H/ucin3GoGAYEqlPbnqhi/JwIgSPwsd8oWWU=",
+      "Fingerprint": "cqjshm6equ",
+      "Integrity": "HAQqCJzNniTYawS861tbrNu99MUAGQ539ZQ+tWtFLc0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "g6935c827w",
-      "Integrity": "yNmx94xype38wcW+a3PITcz8KApM2Qmlj95Q4Mxz1zY=",
+      "Fingerprint": "sdwthcbuj1",
+      "Integrity": "MNrQoPRsbjwkg97eVN/pE8U0w/3936AGzuVxkMGrXbM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -775,7 +775,7 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.au9o078lqi.css",
+      "Route": "css/site.cqjshm6equ.css",
       "AssetFile": "C:\\Users\\Константин\\Source\\Repos\\Politeh_\\gg\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -785,7 +785,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15910"
+          "Value": "16350"
         },
         {
           "Name": "Content-Type",
@@ -793,11 +793,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0oPRot6H/ucin3GoGAYEqlPbnqhi/JwIgSPwsd8oWWU=\""
+          "Value": "\"HAQqCJzNniTYawS861tbrNu99MUAGQ539ZQ+tWtFLc0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 21 May 2025 11:10:29 GMT"
+          "Value": "Sun, 15 Jun 2025 13:48:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -807,7 +807,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "au9o078lqi"
+          "Value": "cqjshm6equ"
         },
         {
           "Name": "label",
@@ -815,7 +815,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0oPRot6H/ucin3GoGAYEqlPbnqhi/JwIgSPwsd8oWWU="
+          "Value": "sha256-HAQqCJzNniTYawS861tbrNu99MUAGQ539ZQ+tWtFLc0="
         }
       ]
     },
@@ -830,7 +830,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15910"
+          "Value": "16350"
         },
         {
           "Name": "Content-Type",
@@ -838,11 +838,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0oPRot6H/ucin3GoGAYEqlPbnqhi/JwIgSPwsd8oWWU=\""
+          "Value": "\"HAQqCJzNniTYawS861tbrNu99MUAGQ539ZQ+tWtFLc0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 21 May 2025 11:10:29 GMT"
+          "Value": "Sun, 15 Jun 2025 13:48:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -852,7 +852,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0oPRot6H/ucin3GoGAYEqlPbnqhi/JwIgSPwsd8oWWU="
+          "Value": "sha256-HAQqCJzNniTYawS861tbrNu99MUAGQ539ZQ+tWtFLc0="
         }
       ]
     },
@@ -939,51 +939,6 @@
       ]
     },
     {
-      "Route": "js/site.g6935c827w.js",
-      "AssetFile": "C:\\Users\\Константин\\Source\\Repos\\Politeh_\\gg\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4603"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"yNmx94xype38wcW+a3PITcz8KApM2Qmlj95Q4Mxz1zY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 12:19:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "g6935c827w"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-yNmx94xype38wcW+a3PITcz8KApM2Qmlj95Q4Mxz1zY="
-        }
-      ]
-    },
-    {
       "Route": "js/site.js",
       "AssetFile": "C:\\Users\\Константин\\Source\\Repos\\Politeh_\\gg\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -994,7 +949,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4603"
+          "Value": "11308"
         },
         {
           "Name": "Content-Type",
@@ -1002,11 +957,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"yNmx94xype38wcW+a3PITcz8KApM2Qmlj95Q4Mxz1zY=\""
+          "Value": "\"MNrQoPRsbjwkg97eVN/pE8U0w/3936AGzuVxkMGrXbM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 12:19:37 GMT"
+          "Value": "Sun, 15 Jun 2025 13:13:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1016,7 +971,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-yNmx94xype38wcW+a3PITcz8KApM2Qmlj95Q4Mxz1zY="
+          "Value": "sha256-MNrQoPRsbjwkg97eVN/pE8U0w/3936AGzuVxkMGrXbM="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.sdwthcbuj1.js",
+      "AssetFile": "C:\\Users\\Константин\\Source\\Repos\\Politeh_\\gg\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11308"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MNrQoPRsbjwkg97eVN/pE8U0w/3936AGzuVxkMGrXbM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 13:13:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sdwthcbuj1"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MNrQoPRsbjwkg97eVN/pE8U0w/3936AGzuVxkMGrXbM="
         }
       ]
     },
