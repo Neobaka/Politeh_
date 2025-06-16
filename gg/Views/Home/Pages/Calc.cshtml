@@ -16,7 +16,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #512da8 0%, #03000c 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
         }
@@ -588,16 +588,13 @@
     <nav class="nav-bar">
         <ul>
             <li><a asp-controller="Home" asp-action="Index" class="nav-item">Главная</a></li>
-            <li><a href="" class="nav-item">Рейтинг по отзывам</a></li>
             <li><a asp-controller="Home" asp-action="RAEX" class="nav-item">Рейтинг по REAX</a></li>
             <li><a asp-controller="Home" asp-action="Prof" class="nav-item">Профориентация</a></li>
-            <li><a href="" class="nav-item">Вебинары</a></li>
             <li><a asp-controller="Home" asp-action="Calc" class="nav-item">Калькулятор ЕГЭ</a></li>
-            <li><a href="" class="nav-item">Сравнение ВУЗов</a></li>
             <li><a asp-controller="Home" asp-action="Guide" class="nav-item">Гайды</a></li>
             <li><a asp-controller="Home" asp-action="Open_doors" class="nav-item">Дни открытых дверей</a></li>
             <li><a asp-controller="Home" asp-action="Kabinet" class="nav-item">Личный кабинет</a></li>
-            <li><a asp-controller="Home" asp-action="Index_rabota" class="nav-item">Личный кабинет</a></li>
+            <li><a asp-controller="Home" asp-action="Index_rabota" class="nav-item">Для работодателей</a></li>
         </ul>
     </nav>
     
@@ -949,7 +946,6 @@
                     item.classList.remove('selected');
                 });
 
-                // Выделяем выбранный элемент
                 element.classList.add('selected');
 
                 // Сохраняем выбранную специальность
@@ -1082,7 +1078,6 @@
                 console.log('Баллы:', scores);
                 console.log('Общий балл:', totalScore);
 
-                // Здесь можно добавить логику отправки данных на сервер
                 alert(`Поиск выполнен!\nСпециальность: ${selectedSpecialtyData.name}\nОбщий балл: ${totalScore}`);
             }
 

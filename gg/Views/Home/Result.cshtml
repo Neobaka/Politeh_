@@ -73,7 +73,6 @@
                     background-color: #2980b9;
                 }
 
-        /* Адаптивный дизайн */
         @@media (max-width: 768px) {
             .container_prof
 
@@ -102,16 +101,13 @@
     <nav class="nav-bar">
         <ul>
             <li><a asp-controller="Home" asp-action="Index" class="nav-item">Главная</a></li>
-            <li><a href="" class="nav-item">Рейтинг по отзывам</a></li>
             <li><a asp-controller="Home" asp-action="RAEX" class="nav-item">Рейтинг по REAX</a></li>
             <li><a asp-controller="Home" asp-action="Prof" class="nav-item">Профориентация</a></li>
-            <li><a href="" class="nav-item">Вебинары</a></li>
             <li><a asp-controller="Home" asp-action="Calc" class="nav-item">Калькулятор ЕГЭ</a></li>
-            <li><a href="" class="nav-item">Сравнение ВУЗов</a></li>
             <li><a asp-controller="Home" asp-action="Guide" class="nav-item">Гайды</a></li>
             <li><a asp-controller="Home" asp-action="Open_doors" class="nav-item">Дни открытых дверей</a></li>
             <li><a asp-controller="Home" asp-action="Kabinet" class="nav-item">Личный кабинет</a></li>
-            <li><a asp-controller="Home" asp-action="Index_rabota" class="nav-item">Личный кабинет</a></li>
+            <li><a asp-controller="Home" asp-action="Index_rabota" class="nav-item">Для работодателей</a></li>
         </ul>
     </nav>
     <div>
@@ -120,19 +116,18 @@
 
             <div class="profession-image">
                 <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Врач -->
-                    <circle cx="50" cy="30" r="20" fill="#E0E0E0" /> <!-- Голова -->
-                    <path d="M30 100V60C30 50 70 50 70 60V100H30Z" fill="#FFFFFF" /> <!-- Халат -->
-                    <rect x="45" y="70" width="10" height="30" fill="#E0E0E0" /> <!-- Передняя часть халата -->
-                    <path d="M30 60V65H70V60C70 50 30 50 30 60Z" fill="#4CAF50" /> <!-- Воротник -->
-                    <circle cx="40" cy="25" r="3" fill="#333333" /> <!-- Левый глаз -->
-                    <circle cx="60" cy="25" r="3" fill="#333333" /> <!-- Правый глаз -->
-                    <path d="M43 35C45 38 55 38 57 35" stroke="#333333" stroke-width="2" /> <!-- Рот -->
-                    <path d="M35 45C35 45 45 55 65 45" stroke="#4CAF50" stroke-width="2" /> <!-- Стетоскоп -->
-                    <circle cx="65" cy="45" r="4" fill="#4CAF50" /> <!-- Конец стетоскопа -->
-                    <rect x="40" y="55" width="20" height="3" fill="#FF5722" /> <!-- Красная полоска -->
-                    <rect x="48" y="15" width="4" height="10" fill="#FFFFFF" /> <!-- Белая полоска на шапочке -->
-                    <rect x="45" y="18" width="10" height="4" fill="#FFFFFF" /> <!-- Белая полоска на шапочке (крест) -->
+                    <circle cx="50" cy="30" r="20" fill="#E0E0E0" />
+                    <path d="M30 100V60C30 50 70 50 70 60V100H30Z" fill="#FFFFFF" />
+                    <rect x="45" y="70" width="10" height="30" fill="#E0E0E0" />
+                    <path d="M30 60V65H70V60C70 50 30 50 30 60Z" fill="#4CAF50" />
+                    <circle cx="40" cy="25" r="3" fill="#333333" />
+                    <circle cx="60" cy="25" r="3" fill="#333333" />
+                    <path d="M43 35C45 38 55 38 57 35" stroke="#333333" stroke-width="2" />
+                    <path d="M35 45C35 45 45 55 65 45" stroke="#4CAF50" stroke-width="2" />
+                    <circle cx="65" cy="45" r="4" fill="#4CAF50" />
+                    <rect x="40" y="55" width="20" height="3" fill="#FF5722" />
+                    <rect x="48" y="15" width="4" height="10" fill="#FFFFFF" />
+                    <rect x="45" y="18" width="10" height="4" fill="#FFFFFF" />
                 </svg>
             </div>
 

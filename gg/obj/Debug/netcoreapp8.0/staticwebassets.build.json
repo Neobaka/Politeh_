@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Artvis3wwhW8KooHoGjOHZ5wKcc1nxphWC6h/LlL/Mc=",
+  "Hash": "uQ0owJ3gemDJYcdCS2OJOnU8NyBwYPN5RX/3dM4yUx4=",
   "Source": "gg",
   "BasePath": "_content/gg",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "cqjshm6equ",
-      "Integrity": "HAQqCJzNniTYawS861tbrNu99MUAGQ539ZQ+tWtFLc0=",
+      "Fingerprint": "vs2r0r6ega",
+      "Integrity": "73L8oYkZ5shuKHcVLs/qdz/rAOm8phbinXwvTi6+hZU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -775,51 +775,6 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.cqjshm6equ.css",
-      "AssetFile": "C:\\Users\\Константин\\Source\\Repos\\Politeh_\\gg\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16350"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HAQqCJzNniTYawS861tbrNu99MUAGQ539ZQ+tWtFLc0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 15 Jun 2025 13:48:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "cqjshm6equ"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-HAQqCJzNniTYawS861tbrNu99MUAGQ539ZQ+tWtFLc0="
-        }
-      ]
-    },
-    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\Константин\\Source\\Repos\\Politeh_\\gg\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -830,7 +785,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16350"
+          "Value": "15281"
         },
         {
           "Name": "Content-Type",
@@ -838,11 +793,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HAQqCJzNniTYawS861tbrNu99MUAGQ539ZQ+tWtFLc0=\""
+          "Value": "\"73L8oYkZ5shuKHcVLs/qdz/rAOm8phbinXwvTi6+hZU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Jun 2025 13:48:05 GMT"
+          "Value": "Mon, 16 Jun 2025 20:13:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -852,7 +807,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HAQqCJzNniTYawS861tbrNu99MUAGQ539ZQ+tWtFLc0="
+          "Value": "sha256-73L8oYkZ5shuKHcVLs/qdz/rAOm8phbinXwvTi6+hZU="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.vs2r0r6ega.css",
+      "AssetFile": "C:\\Users\\Константин\\Source\\Repos\\Politeh_\\gg\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"73L8oYkZ5shuKHcVLs/qdz/rAOm8phbinXwvTi6+hZU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 20:13:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vs2r0r6ega"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-73L8oYkZ5shuKHcVLs/qdz/rAOm8phbinXwvTi6+hZU="
         }
       ]
     },

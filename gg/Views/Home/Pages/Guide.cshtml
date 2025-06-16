@@ -6,23 +6,20 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body style="background: linear-gradient(135deg, #512da8 0%, #03000c 100%);">
+<body style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
     <div>
         <header>
             <div>
                 <nav class="nav-bar">
                     <ul>
                         <li><a asp-controller="Home" asp-action="Index" class="nav-item">Главная</a></li>
-                        <li><a href="" class="nav-item">Рейтинг по отзывам</a></li>
                         <li><a asp-controller="Home" asp-action="RAEX" class="nav-item">Рейтинг по REAX</a></li>
                         <li><a asp-controller="Home" asp-action="Prof" class="nav-item">Профориентация</a></li>
-                        <li><a href="" class="nav-item">Вебинары</a></li>
                         <li><a asp-controller="Home" asp-action="Calc" class="nav-item">Калькулятор ЕГЭ</a></li>
-                        <li><a href="" class="nav-item">Сравнение ВУЗов</a></li>
                         <li><a asp-controller="Home" asp-action="Guide" class="nav-item">Гайды</a></li>
                         <li><a asp-controller="Home" asp-action="Open_doors" class="nav-item">Дни открытых дверей</a></li>
                         <li><a asp-controller="Home" asp-action="Kabinet" class="nav-item">Личный кабинет</a></li>
-                        <li><a asp-controller="Home" asp-action="Index_rabota" class="nav-item">Личный кабинет</a></li>
+                        <li><a asp-controller="Home" asp-action="Index_rabota" class="nav-item">Для работодателей</a></li>
                     </ul>
                 </nav>
             </div>
@@ -59,7 +56,41 @@
             </div>
         </div>
 
-        <!-- Пост 2 (пример дополнительного поста) -->
+        <!-- Пост 2 -->
+        <div class="post">
+            <div class="post-header">
+                <h2 class="post-title">
+                    ООО «Яндекс»
+                </h2>
+                <p class="post-description">
+                    Яндекс - компания возможностей!
+
+                    Посети наше мероприятие и узнай большей о профессиях в компании!
+                </p>
+            </div>
+            <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_65f988c36086902ffd879528_65f988ea4825a81e00f7340a/scale_1200" alt="Post image" class="post-image">
+            <div class="post-stats">
+                <div class="post-views">
+                    <span>10.8K показов</span>
+                    <span>•</span>
+                    <span>5.1K открытий</span>
+                </div>
+                <div class="post-actions">
+                    <button class="action-button like-button">
+                        <i class="far fa-heart"></i>
+                        <span class="likes-count">1343</span>
+                    </button>
+                    <button class="action-button">
+                        <i class="far fa-comment"></i>
+                    </button>
+                    <button class="action-button bookmark-button">
+                        <i class="far fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Пост 3 -->
         <div class="post">
             <div class="post-header">
                 <h2 class="post-title">Как подготовиться к ЕГЭ</h2>
