@@ -5,18 +5,18 @@
     <title>Результат теста</title>
     <style>
         body {
-            background-color: #6c5ce7;
             font-family: Arial, sans-serif;
             color: white;
             text-align: center;
             padding: 40px 0px 0px 0px;
             width: 95%;
-            background: linear-gradient(135deg, #512da8 0%, #03000c 100%);
         }
 
         .result-page {
             text-align: center;
             padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 700px;
         }
 
         .result-title {
@@ -101,13 +101,15 @@
     <nav class="nav-bar">
         <ul>
             <li><a asp-controller="Home" asp-action="Index" class="nav-item">Главная</a></li>
+            <li><a asp-controller="Home" asp-action="Index_rabota" class="nav-item">Для работодателей</a></li>
             <li><a asp-controller="Home" asp-action="RAEX" class="nav-item">Рейтинг по REAX</a></li>
+            <li><a asp-controller="Home" asp-action="Index_otz" class="nav-item">Рейтинг по отзывам</a></li>
             <li><a asp-controller="Home" asp-action="Prof" class="nav-item">Профориентация</a></li>
             <li><a asp-controller="Home" asp-action="Calc" class="nav-item">Калькулятор ЕГЭ</a></li>
             <li><a asp-controller="Home" asp-action="Guide" class="nav-item">Гайды</a></li>
             <li><a asp-controller="Home" asp-action="Open_doors" class="nav-item">Дни открытых дверей</a></li>
             <li><a asp-controller="Home" asp-action="Kabinet" class="nav-item">Личный кабинет</a></li>
-            <li><a asp-controller="Home" asp-action="Index_rabota" class="nav-item">Для работодателей</a></li>
+
         </ul>
     </nav>
     <div>

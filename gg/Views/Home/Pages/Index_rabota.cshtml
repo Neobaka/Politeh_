@@ -353,16 +353,20 @@
     </style>
 </head>
 <body>
-    <div class="nav-bar">
-        <button class="nav-item"><a asp-controller="Home" asp-action="Index">Главная</a></button>
-        <button class="nav-item"><a asp-controller="Home" asp-action="Index">Рейтинг по REAX</a></button>
-        <button class="nav-item"><a asp-controller="Home" asp-action="Prof">Профориентация</a></button>
-        <button class="nav-item"><a asp-controller="Home" asp-action="Calc">Калькулятор ЕГЭ</a></button>
-        <button class="nav-item"><a asp-controller="Home" asp-action="Guide">Гайды</a></button>
-        <button class="nav-item"><a asp-controller="Home" asp-action="Open_doors">Дни открытых дверей</a></button>
-        <button class="nav-item"><a asp-controller="Home" asp-action="Index">Работодателям</a></button>
-        <button class="nav-item"><a asp-controller="Home" asp-action="Index">Личный кабинет</a></button>
-    </div>
+    <nav class="nav-bar">
+        <ul>
+            <li><a asp-controller="Home" asp-action="Index" class="nav-item">Главная</a></li>
+            <li><a asp-controller="Home" asp-action="Index_rabota" class="nav-item">Для работодателей</a></li>
+            <li><a asp-controller="Home" asp-action="RAEX" class="nav-item">Рейтинг по REAX</a></li>
+            <li><a asp-controller="Home" asp-action="Index_otz" class="nav-item">Рейтинг по отзывам</a></li>
+            <li><a asp-controller="Home" asp-action="Prof" class="nav-item">Профориентация</a></li>
+            <li><a asp-controller="Home" asp-action="Calc" class="nav-item">Калькулятор ЕГЭ</a></li>
+            <li><a asp-controller="Home" asp-action="Guide" class="nav-item">Гайды</a></li>
+            <li><a asp-controller="Home" asp-action="Open_doors" class="nav-item">Дни открытых дверей</a></li>
+            <li><a asp-controller="Home" asp-action="Kabinet" class="nav-item">Личный кабинет</a></li>
+
+        </ul>
+    </nav>
 
     <div class="container">
         <div class="header-section">

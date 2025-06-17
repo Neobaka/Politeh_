@@ -235,6 +235,63 @@
                 font-size: 16px;
             }
 
+        .scores-section {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-left: 1px solid #E5E7EB;
+            min-width: 180px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .variant-title {
+            font-size: 12px;
+            color: #6B7280;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Базовые стили для всех рейтингов */
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 16px;
+            color: #374151;
+        }
+
+        .stars {
+            display: flex;
+            gap: 2px;
+        }
+
+        .star {
+            font-size: 18px;
+            color: #D1D5DB; /* серый цвет для пустых звезд */
+        }
+
+            .star.filled {
+                color: #F59E0B; /* золотой цвет для заполненных звезд */
+            }
+
+            .star.half {
+                background: linear-gradient(90deg, #F59E0B 50%, #D1D5DB 50%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+        .rating-text {
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
         .filters-panel {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
@@ -444,7 +501,7 @@
 
         <div class="main-content">
             <div class="universities-grid">
-                <div class="university-card" data-filters="obshaga trud hard voen useful dop">
+                <div class="university-card" data-filters="trud">
                     <div class="university-image" style="background-image: url('https://avatars.mds.yandex.net/get-altay/11368589/2a0000018bc765d3bab1020f3b660eb59b2e/XXL_height')">
                         <div class="tuition-fee">от 44 000 ₽/семестр</div>
                     </div>
@@ -456,31 +513,23 @@
                         <button class="reviews-button">Отзывы</button>
                         </a>
                     </div>
-                    <div class="scores-section">
-                        <div class="score">от <span>54</span> бал. бюджет</div>
-                        <div class="score">от <span>51</span> бал. платно</div>
-                    </div>
+                        <div class="scores-section">
+                            <div class="rating">
+                                <div class="stars">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                </div>
+                                <span class="rating-text">5.0/5</span>
+                            </div>
+                        </div>
                 </div>
 
-                <div class="university-card" data-filters="trud hard useful staz fun dost">
-                    <div class="university-image" style="background-image: url('https://smapse.ru/storage/2020/10/itmo-spb-smapse2.jpg')">
-                        <div class="tuition-fee">от 44 000 ₽/семестр</div>
-                    </div>
-                    <div class="university-info">
-                            <a asp-controller="Home" asp-action="ITMO_vuz" style="text-decoration: none;">
-                        <div class="university-location">Санкт-Петербург</div>
-                        <div class="university-name">Университет ИТМО</div>
-                        <div class="university-rating">№14 в рейтинге по RAEX</div>
-                        <button class="reviews-button">Отзывы</button>
-                        </a>
-                    </div>
-                    <div class="scores-section">
-                        <div class="score">от <span>74</span> бал. бюджет</div>
-                        <div class="score">от <span>65</span> бал. платно</div>
-                    </div>
-                </div>
+                
 
-                <div class="university-card" data-filters="obshaga useful staz prepod fun dop dost vremya">
+                <div class="university-card" data-filters="obshaga">
                     <div class="university-image" style="background-image: url('https://obruchev.mos.ru/%D1%80%D1%83%D0%B4%D0%BD89%D0%B7%D1%88%D1%89%D0%B6%D0%BB%D0%B4.jpg')">
                         <div class="tuition-fee">от 44 000 ₽/семестр</div>
                     </div>
@@ -492,13 +541,48 @@
                         <button class="reviews-button">Отзывы</button>
                         </a>
                     </div>
-                    <div class="scores-section">
-                        <div class="score">от <span>61</span> бал. бюджет</div>
-                        <div class="score">от <span>33</span> бал. платно</div>
-                    </div>
+                        <div class="scores-section">
+                            <div class="rating">
+                                <div class="stars">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star half">★</span>
+                                </div>
+                                <span class="rating-text">4.5/5</span>
+                            </div>
+                        </div>
                 </div>
 
-                <div class="university-card" data-filters="obshaga trud hard voen useful staz prepod fun dop">
+
+                <div class="university-card" data-filters="trud">
+                    <div class="university-image" style="background-image: url('https://smapse.ru/storage/2020/10/itmo-spb-smapse2.jpg')">
+                        <div class="tuition-fee">от 44 000 ₽/семестр</div>
+                    </div>
+                    <div class="university-info">
+                            <a asp-controller="Home" asp-action="ITMO_vuz" style="text-decoration: none;">
+                        <div class="university-location">Санкт-Петербург</div>
+                        <div class="university-name">Университет ИТМО</div>
+                        <div class="university-rating">№14 в рейтинге по RAEX</div>
+                        <button class="reviews-button">Отзывы</button>
+                        </a>
+                    </div>
+                        <div class="scores-section">
+                            <div class="rating">
+                                <div class="stars">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star half">★</span>
+                                </div>
+                                <span class="rating-text">4.7/5</span>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="university-card" data-filters="trud">
                     <div class="university-image" style="background-image: url('https://dpru.obs.ru-moscow-1.hc.sbercloud.ru/images/article/2020/08/21/96AEB8FB-D105-4D93-97CA-15D7BE05E0B8.jpg')">
                         <div class="tuition-fee">от 44 000 ₽/семестр</div>
                     </div>
@@ -510,10 +594,18 @@
                         <button class="reviews-button">Отзывы</button>
                         </a>
                     </div>
-                    <div class="scores-section">
-                        <div class="score">от <span>85</span> бал. бюджет</div>
-                        <div class="score">от <span>51</span> бал. платно</div>
-                    </div>
+                        <div class="scores-section">
+                            <div class="rating">
+                                <div class="stars">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star half">★</span>
+                                </div>
+                                <span class="rating-text">4.6/5</span>
+                            </div>
+                        </div>
                 </div>
             </div>
 
@@ -521,9 +613,9 @@
                 <h3 class="filters-title">Параметры выбора</h3>
                 <button class="show-all-btn" onclick="filterSelection('all')">Показать все</button>
                 <div class="filter-buttons">
-                    <button class="filter-btn" data-filter="obshaga" onclick="filterSelection('obshaga')">Общежитие</button>
-                    <button class="filter-btn" data-filter="trud" onclick="filterSelection('trud')">Привлекательность при трудоустройстве</button>
-                    <button class="filter-btn" data-filter="hard" onclick="filterSelection('hard')">Сложность обучения</button>
+                    <button class="filter-btn" data-filter="obshaga" onclick="filterSelection('obshaga')">Москва</button>
+                    <button class="filter-btn" data-filter="trud" onclick="filterSelection('trud')">Санкт-Петербург</button>
+@*                     <button class="filter-btn" data-filter="hard" onclick="filterSelection('hard')">Сложность обучения</button>
                     <button class="filter-btn" data-filter="voen" onclick="filterSelection('voen')">Военная кафедра</button>
                     <button class="filter-btn" data-filter="useful" onclick="filterSelection('useful')">Полезность предметов</button>
                     <button class="filter-btn" data-filter="staz" onclick="filterSelection('staz')">Стажировка</button>
@@ -531,7 +623,7 @@
                     <button class="filter-btn" data-filter="fun" onclick="filterSelection('fun')">Развлечения</button>
                     <button class="filter-btn" data-filter="dop" onclick="filterSelection('dop')">Доп. образование/курсы</button>
                     <button class="filter-btn" data-filter="dost" onclick="filterSelection('dost')">Транспортная доступность</button>
-                    <button class="filter-btn" data-filter="vremya" onclick="filterSelection('vremya')">Пространство для свободного времени</button>
+                    <button class="filter-btn" data-filter="vremya" onclick="filterSelection('vremya')">Пространство для свободного времени</button> *@
                 </div>
             </div>
         </div>

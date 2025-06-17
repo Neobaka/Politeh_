@@ -71,6 +71,11 @@ namespace gg.Controllers
             return View("~/Views/Home/Pages/Prof.cshtml");
         }
 
+        public IActionResult Index_otz()
+        {
+            return View("~/Views/Home/Pages/Index_otz.cshtml");
+        }
+
         public IActionResult Result()
         {
             return View();
