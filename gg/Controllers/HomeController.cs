@@ -56,6 +56,16 @@ namespace gg.Controllers
             return View();
         }
 
+        public IActionResult DRUZHBA_vuz()
+        {
+            return View();
+        }
+
+        public IActionResult SPBG_vuz()
+        {
+            return View();
+        }
+
         public IActionResult Prof()
         {
             return View("~/Views/Home/Pages/Prof.cshtml");
